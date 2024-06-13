@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
+.header {
     background-image: linear-gradient(90deg, #FF3833, #FF3A33, #FF8B4B);
     color: white;
     text-align: center;
