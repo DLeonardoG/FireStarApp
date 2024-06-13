@@ -1,6 +1,3 @@
-:root {
-    font-size: 5vw;
-}
 body {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -9,6 +6,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    font-size: 5vw;
+}
+main {
+    margin: 0;
+    margin-bottom: 8vh;
 }
 .inicio {
     /* display: flex;
@@ -29,7 +31,7 @@ body {
     width: 100%;
 }
 .top_del_mes__h2 {
-    font-size: 2vw;
+    font-size: 200%;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
@@ -50,7 +52,7 @@ body {
     margin-top: 2%
 }
 .inicio__famosos h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
@@ -91,27 +93,21 @@ body {
 } */
 .miniaturas__famosos__imagen {
     border-radius: 8px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     box-shadow: 0 0 30px #000;
 }
 .miniaturas {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    width: 100%;
-    /* grid-template-columns: 
+    display: grid;
+    grid-template-columns: 
         repeat(
             auto-fit,
-            minmax(50px, 1fr)
-        ); */
+            minmax(80px, 1fr)
+        );
     gap: 5px;
     margin: 0 3%;
-    scrollbar-width: none;
 }
-.miniaturas::-webkit-scrollbar {
-    display: none;
-}
+
 .header {
     background-image: linear-gradient(90deg, #FF3833, #FF3A33, #FF8B4B);
     color: white;
@@ -136,7 +132,7 @@ body {
 
 .profile-card h2 {
     color: #333;
-    font-size: 1.5rem; /* Tamaño de letra aumentado para móviles */
+    font-size: 1.5em; /* Tamaño de letra aumentado para móviles */
 }
 
 .profile-card p {
