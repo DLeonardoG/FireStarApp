@@ -47,7 +47,7 @@ header {
     font-size: 1rem; /* Tamaño de letra aumentado para móviles */
 }
 
-footer {
+.footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
@@ -56,29 +56,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
-.bar {
-    background-image: linear-gradient(90deg, #FF3833, #FF3A33, #FF8B4B);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.imagen {
-    max-width: 40px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
 @media (max-width: 768px) {
     .profiles {
         padding: 10px;

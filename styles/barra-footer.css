@@ -1,0 +1,61 @@
+.header__nav {
+    background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B);
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.header__nav__button {
+    background-color: transparent;
+    color: white;
+    padding: 0 4px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.heaedr__nav__img
+.footer__nav {
+    background-image: linear-gradient(90deg, #FF3833, #FF3A33, #FF8B4B);
+    color: white;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+.nav__button {
+    background-color: transparent;
+    color: white;
+    padding: 0 4px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav__img {
+    max-width: 25px;
+    padding: 0;
+    margin: 0;
+}
+.nav__span {
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+}
