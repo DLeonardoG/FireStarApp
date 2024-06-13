@@ -2,7 +2,7 @@
 .footer__nav {
     background-image: linear-gradient(90deg, #FF3833, #FF3A33, #FF8B4B);
     color: white;
-    padding: 0.5vh 0;
+    padding: 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -10,11 +10,12 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
+    box-sizing: border-box;
 }
 .nav__button {
     background-color: transparent;
     color: white;
-    padding: 0 7vw;
+    padding: 0.5vh 6vw;
     border: none;
     border-radius: none;
     cursor: pointer;
@@ -23,7 +24,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+}
+.nav__button--perfil {
+    margin: 0;
+    padding: 0;
 }
 .nav__img {
     max-width: 8vw;

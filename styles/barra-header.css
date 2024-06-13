@@ -1,18 +1,19 @@
 .header__nav {
     background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B);
     color: white;
-    padding: 5px 0;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
-    margin-bottom: 2%;
+    margin-bottom: 1vh;
 }
 .header__nav__button {
     background-color: transparent;
     color: white;
-    padding: 0 4px;
+    padding: 1vh 2vw;
     border: none;
     border-radius: none;
     cursor: pointer;
@@ -23,7 +24,7 @@
     align-items: center;
 }
 .header__nav__img {
-    max-width: 30px;
+    width: 8vw;
     padding: 0;
     margin: 0;
 }
