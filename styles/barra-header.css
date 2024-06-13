@@ -1,0 +1,36 @@
+.header__nav {
+    background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B);
+    color: white;
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 20px 
+}
+.header__nav__button {
+    background-color: transparent;
+    color: white;
+    padding: 0 4px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__nav__img {
+    max-width: 30px;
+    padding: 0;
+    margin: 0;
+}
+.header__nav__title {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+}
