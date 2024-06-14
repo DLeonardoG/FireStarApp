@@ -33,7 +33,7 @@ body {
     align-items: start;
     width: 100%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0;
 }
 .nombre {
     display: flex;
@@ -48,15 +48,25 @@ body {
     font-size: 1.5rem;
     text-align: center;
     text-transform: capitalize;
+    padding: 0 10%;
+    margin: 0;
 }
 .parrafo {
+    margin: 0;
+    padding: 0;
+
 }
 .parrafo__descripcion {
     display: flex;
-    font-size: 3.4vw;
+    font-size: 4vw;
     text-align: start;
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 .form__añadir_al_carrito {
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
 
 }
 .añadir_al_carrito__button {
@@ -67,10 +77,13 @@ body {
     border: none;
     border-radius: 30px;
     text-transform: capitalize;
+    text-align: center;
     cursor: pointer;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+}
+.añadir_al_carrito__button span {
+    text-align: center;
     width: 100%;
 }
