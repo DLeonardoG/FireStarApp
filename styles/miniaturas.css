@@ -1,0 +1,46 @@
+.inicio__famosos {
+    padding: 1vh 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5vh 0;
+}
+.inicio__famosos h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #FF402F;
+}
+.ver_todos__button {
+    background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B);
+    color: white;
+    padding: 0.5vh 8vw;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniaturas__famosos__imagen {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px #000;
+}
+.miniaturas {
+    display: grid;
+    grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(100px, 1fr)
+        );
+    gap: 5px;
+    margin: 0 3%;
+}
