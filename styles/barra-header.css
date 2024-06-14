@@ -1,3 +1,6 @@
+body {
+    font-size: 5vw
+}
 .header__nav {
     background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B);
     color: white;
