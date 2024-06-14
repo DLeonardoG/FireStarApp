@@ -10,6 +10,9 @@ body {
     margin: 0;
     margin-bottom: 15%;
 }
+:root {
+    font-size: 5vw;
+}
 .footer__nav {
     background-image: linear-gradient(90deg, #FF3833, #FF3A33, #FF8B4B);
     color: white;
@@ -46,13 +49,13 @@ body {
     margin: 0;
 }
 .nav__span {
-    font-size: 0.6em;
+    font-size: 0.6rem;
     margin: 0;
     padding: 0;
 }
 .nav__icono--famosos {
-    padding: 0 1vw 0.5vh;
+    padding: 0 1vw 10%;
     border-bottom: 0.5vh #f4f4f4 solid;
-    border-bottom-right-radius: 40%;
-    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
 }
