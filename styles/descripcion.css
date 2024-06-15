@@ -8,64 +8,44 @@ body {
     background-color: #f4f4f4;
     font-size: 5vw;
     margin: 0;
-    margin-bottom: 15%;
 }
-
-.carousel__descripcion {
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    overflow-x: scroll;
-}
-.descripcion__imagen {
-    display: flex;
+.descripcion__gif {
     width: 100%;
-}
-.descripcion__imagen img {
-    object-fit: contain;
-
+    height: 24vh;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    background-image: url('../imagenes/descripciones/gif/gif_lobo-de-wall-street.gif');
+    box-sizing: border-box;
+    margin: 15% 0 0;
 }
 .descripcion {
-    
-}
-.descripcion__texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     width: 100%;
     margin: 0;
-    padding: 0;
-}
-.nombre {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-.nombre__pelicula {
-    font-size: 1.5rem;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 0 10%;
-    margin: 0;
-}
-.parrafo {
-    margin: 0;
-    padding: 0;
-
-}
-.parrafo__descripcion {
-    display: flex;
-    font-size: 4vw;
-    text-align: start;
-    padding: 0 10%;
+    padding: 0 5%;
     box-sizing: border-box;
 }
-.añadir_al_carrito__button span {
-    text-align: center;
-    width: 100%;
+.descripcion__title {
+    font-size: 2.5rem;
+    margin: 10% 0 0;
+    padding: 0;
+}
+.descripcion__title--sinopsis {
+    font-size: 2rem;
+    margin: 10% 0 0;
+    padding: 0;
+    color: #fd041d;
+}
+.descripcion__texto {
+    font-size: 1.2rem;
+    margin: 0 0 10%;
+    padding: 0;
 }

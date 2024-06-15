@@ -7,60 +7,80 @@
     <link rel="icon" href="../../../imagenes\iconos\logo-pestaña.png">
     <link rel="stylesheet" href="../../../styles\barra-header.css">
     <link rel="stylesheet" href="../../../styles/descripcion.css">
+    <link rel="stylesheet" href="../../../styles/carousel.css">
     <link rel="stylesheet" href="../../../styles/botones.css">
     <link rel="stylesheet" href="../../../styles\barra-footer.css">
 </head>
 <body>
     <header>
-        
+        <nav class="header__nav header__nav--descripcion">
+            <form class="nav__form" action="../ver_todos/peliculas_ver_todas_accion.html">
+                <button class="header__nav__button" type="submit">
+                    <img class="header__nav__img img__perfil--user" src="../../../../imagenes/iconos/icono-volver.svg" alt="icono inicio">
+                </button>
+            </form>
+            <div class="header__nav__title">
+                <h1 class="header__nav__title nav__span--compras">descripcion</h1>
+            </div>
+            <form class="nav__form" action="../../../index.html">
+                <button class="header__nav__button" type="submit">
+                    <img class="header__nav__img" src="../../../imagenes/iconos/icono-perfil-header.png" alt="Volver">
+                </button>
+            </form>
+        </nav>
     </header>
-    <main class="descripcion">
-        <div class="descripcion__texto">
-            <h2>Cristiano Ronaldo</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptates ab porro maxime expedita harum ratione nesciunt fuga quidem eligendi veritatis odit et, sint quam accusantium! Explicabo a magnam porro.</p>
+    <main>
+        <div class="descripcion__gif">
+        </div>
+        <div class="descripcion">
+            <h2 class="descripcion__title">El lobo de wall street</h2>
+            <ul class="lista">
+                <li><span><b>Nacionalidad:</b> EEUU.</span></li>
+                <li><span><b>Año:</b> 2013.</span></li>
+                <li><span><b>Género:</b> comedia.</span></li>
+                <li><span><b>Director:</b> Martin Scorsese..</span></li>
+            </ul>
+            <h2 class="descripcion__title descripcion__title--sinopsis">Sinopsis</h2>
+            <p class="descripcion__texto">Película basada en hechos reales del corredor de bolsa neoyorquino Jordan Belfort. A mediados de los años 80, Belfort era un joven honrado que perseguía el sueño americano, pero pronto en la agencia de valores aprendió que lo más importante no era hacer ganar a sus clientes, sino ser ambicioso y ganar una buena comisión. Su enorme éxito y fortuna le valió el mote de “El lobo de Wall Street”. Dinero. Poder. Mujeres. Drogas. Las tentaciones abundaban y el temor a la ley era irrelevante. Jordan y su manada de lobos consideraban que la discreción era una cualidad anticuada; nunca se conformaban con lo que tenían.</p>
+            <h2 class="descripcion__title descripcion__title--reparto">Reparto</h2>
+            <span><b>Elenco:</b> Leonardo DiCaprio, Jonah Hill, Margot Robbie.</span>
+        </div>
+        <div class="carousel__miniaturas">
+            <div class="carousel__miniaturas__div">
+                <div class="carousel__miniaturas__item">
+                    <div class="carousel__miniaturas__imagen">
+                        <img class="carousel__miniaturas__imagen--mini"  src="../../../imagenes/miniaturas/mini-margot-robbie.png" alt="pelicula 2">
+                    </div>
+                </div>
+                <div class="carousel__miniaturas__item">
+                    <div class="carousel__miniaturas__imagen">
+                        <img class="carousel__miniaturas__imagen--mini"  src="../../../imagenes/miniaturas/mini-margot-robbie.png" alt="pelicula 2">
+                    </div>
+                </div>
+                <div class="carousel__miniaturas__item">
+                    <div class="carousel__miniaturas__imagen">
+                        <img class="carousel__miniaturas__imagen--mini"  src="../../../imagenes/miniaturas/mini-margot-robbie.png" alt="pelicula 2">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <section>
 
     </section>
     <div class="pago">
-        <div class="total">
+        <div class="pago__total">
             <span>Total</span>
-            <span>$139.96</span>
+            <span>$200.000</span>
         </div>
         <div class="pago__botones">
-            <a href="#" class="pago__button">Proceder al pago</a>
+            <a href="../../carrito.html" class="pago__button">Comprar</a>
         </div>
         <div class="pago__botones">
-            <a href="#" class="pago__button pago__button--transparente">Continuar comprando</a>
+            <a href="../ver_todos/peliculas_ver_todas_accion.html" class="pago__button pago__button--transparente">No comprar</a>
         </div>
     </div>
     <footer>
-        <nav class="footer__nav">
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--inicio" src="../../../imagenes\iconos\icono-inicio.png" alt="Volver">
-                    <span class="nav__span nav__span--inicio">Inicio</span>
-                </button>
-            </form>
-            <form class="nav__form" action="peliculas.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img nav__icono--peliculas" src="../../../imagenes\iconos\icono-peliculas.png" alt="Volver">
-                </button>
-            </form>
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--compras" src="../../../imagenes\iconos\icono-compras.png" alt="Volver">
-                    <span class="nav__span nav__span--compras">Compras</span>
-                </button>
-            </form>
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--compras" src="../../../imagenes\iconos\icono-perfil.png" alt="Volver">
-                    <span class="nav__span nav__span--compras">Perfil</span>
-                </button>
-            </form>
-        </nav>
     </footer>
 </body>
 </html>
