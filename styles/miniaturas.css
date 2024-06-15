@@ -1,4 +1,4 @@
-.inicio__famosos {
+.inicio__peliculas {
     padding: 1vh 0;
     width: 100%;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
     margin: 0;
 }
-.inicio__famosos h2 {
+.inicio__peliculas h2 {
     font-size: 1.5em;
     margin: 0;
     padding: 0;
@@ -32,11 +32,21 @@
     justify-content: center;
     align-items: center;
 }
-.miniaturas__famosos__imagen {
+.miniaturas__peliculas__imagen {
     border-radius: 8px;
     width: 100%;
     height: auto;
     box-shadow: 0 0 5px #000;
+}
+.miniaturas__peliculas__name {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    line-height: 0;
+
 }
 .miniaturas {
     display: grid;

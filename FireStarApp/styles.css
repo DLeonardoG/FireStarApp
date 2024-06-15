@@ -35,7 +35,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* Estilos para las filas de famosos */
+/* Estilos para las filas de peliculas */
 .famous-row {
     display: flex;
     flex-wrap: wrap;
