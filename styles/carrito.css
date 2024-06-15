@@ -11,7 +11,53 @@ body {
     margin-bottom: 15%;
     box-sizing: border-box;
 }
-
+.compra__item {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5%;
+}
+.compra__item__imagen {
+    display: flex;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.compra__item__imagen--pelicula {
+    max-width: 100%;
+}
+.compra__item__descripcion {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    padding: 0 10%;
+    margin: 0;
+}
+.compra__item--title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0  ;
+}
+.compra__item--precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.compra__item--duracion {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
 .compras {
     box-sizing: border-box;
     width: 100%;
@@ -27,7 +73,7 @@ body {
     box-sizing: border-box;
 }
 
-.footer {
+.pago {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -36,68 +82,21 @@ body {
     border-bottom: 1px solid #e2e8f0;
 }
 
-.content {
-
-}
-
-.title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0  ;
-    margin-bottom: 0;
-}
-
-.compra__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    padding: 0;
-    border: 1px solid #e2e8f0;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 
-        repeat(
-            auto-fit,
-            minmax(400px, 1fr)
-        );
-    gap: 3%;
-    
-}
-.compra__item__imagen {
-
-}
-.compra__item__imagen--producto {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 0 5px #000;
-}
-
-.item-info {
-    font-size: 1rem;
-    text-align: center;
-}
-
-.item-info p {
-    margin: 0.5rem 0;
-}
-
 .total {
     font-size: 1.125rem;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 0 5%;
     display: flex;
     flex-direction: row;
 }
-
-.button {
+.pago__botones {
+    padding: 0;
+    margin: 2%;
+}
+.pago__button {
     background-color: #3182ce;
     color: #fff;
     padding: 0.75rem 1.25rem;
@@ -112,9 +111,10 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    margin: 0;
 }
 
-.button.outline {
+.pago__button--transparente {
     background-color: transparent;
     border: 2px solid #3182ce;
     color: #3182ce;
