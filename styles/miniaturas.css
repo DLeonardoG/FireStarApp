@@ -38,7 +38,14 @@
     height: auto;
     box-shadow: 0 0 5px #000;
 }
+.miniaturas__div {
+    display: flex;
+    flex-direction: column;
+}
 .miniaturas__peliculas__name {
+
+}
+.miniaturas__peliculas__name--sub {
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
@@ -46,7 +53,6 @@
     color: #fff;
     text-align: center;
     line-height: 0;
-
 }
 .miniaturas {
     display: grid;
