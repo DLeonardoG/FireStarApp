@@ -1,26 +1,36 @@
-    
-:root {
+body {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
     font-size: 5vw;
+    margin: 10% 0 15%;
 }
 .footer__nav {
-
     /* background-image: linear-gradient( #2E3034, #1E1D1D, #000000, #000000); */
-    background-color: #000000;
+    background-color: #000000bd;
     color: white;
     padding: 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
-    box-sizing: border-box;
+    margin-bottom: 1vh;
+    position: fixed;
+    top: 0;
 }
-.nav__button {
+.footer__nav--descripcion {
+    position: fixed;
+}
+.footer__nav__button {
     background-color: transparent;
     color: white;
-    padding: 0.5vh 6vw;
+    padding: 1vh 2vw;
     border: none;
     border-radius: none;
     cursor: pointer;
@@ -30,23 +40,20 @@
     justify-content: center;
     align-items: center;
 }
-.nav__button--perfil {
-    margin: 0;
-    padding: 0;
-}
-.nav__img {
-    max-width: 8vw;
+.footer__nav__img {
+    width: 8vw;
     padding: 0;
     margin: 0;
 }
-.nav__span {
-    font-size: 0.6rem;
+.footer__nav__title {
+    font-size: 1.3em;
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
+    font-weight: bold;
 }
-.nav__icono--peliculas {
-    padding: 0 1vw 10%;
-    border-bottom: 0.5vh #f4f4f4 solid;
-    border-bottom-right-radius: 1%;
-    border-bottom-left-radius: 1%;
+.lista, .lista li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireStarApp</title>
-    <link rel="icon" href="imagenes\iconos\logo-pestaña.png">
+    <link rel="icon" href="imagenes\iconos\icono-peliculas.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles\barra-header.css">
@@ -14,21 +14,41 @@
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <form class="nav__form" action="index.html">
-                <button class="header__nav__button" type="submit">
-                    <img class="header__nav__img img__perfil--user" src="imagenes\iconos\icono-inicio.png" alt="icono inicio">
-                </button>
-            </form>
-            <div class="header__nav__title">
-                <h1 class="header__nav__title nav__span--compras">inicio</h1>
-            </div>
-
-            <form class="nav__form" action="index.html">
-                <button class="header__nav__button" type="submit">
-                    <img class="header__nav__img" src="imagenes\iconos\icono-perfil-header.png" alt="Volver">
-                </button>
-            </form>
+        <nav>
+            <ul class="lista header__nav">
+                <li>
+                    <form class="nav__form" action="index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="imagenes\iconos\icono-inicio.png" alt="inicio">
+                            <span class="nav__span nav__span--inicio">Inicio</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="contenido\peliculas.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="imagenes\iconos\icono-peliculas.svg" alt="Peliculas">
+                            <span class="nav__span nav__span--inicio">Peliculas</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="imagenes\iconos\icono-compras.png" alt="Compras">
+                            <span class="nav__span nav__span--compras">Compras</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="imagenes\iconos\icono-perfil.png" alt="Perfil">
+                            <span class="nav__span nav__span--compras">Perfil</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
         </nav>
     </header>
     <section class="pc">
@@ -40,18 +60,18 @@
     </section>
     <main class="inicio">
         <div class="top_del_mes">
-            <h2 class="top_del_mes__h2">Descuentos</h2>
+            <h2 class="top_del_mes__h2">Mas compradas</h2>
         </div>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="imagenes\top_del_mes\top-del-mes.png" class="d-block w-100" alt="...">
+                <a href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html"><img src="imagenes/top_peliculas/top_el-lobo-de-wall-street.gif" class="d-block w-100" alt="lobo de wall street"></a>
               </div>
-              <div class="carousel-item">
-                <img src="imagenes\top_del_mes\top-del-mes-2.png" class="d-block w-100" alt="...">
+              <div class="carousel-item active">
+                <a href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html"><img src="imagenes/top_peliculas/top_el-lobo-de-wall-street.gif" class="d-block w-100" alt="lobo de wall street"></a>
               </div>
-              <div class="carousel-item">
-                <img src="imagenes\top_del_mes\top-del-mes-3.png" class="d-block w-100" alt="...">
+              <div class="carousel-item active">
+                <a href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html"><img src="imagenes/top_peliculas/top_el-lobo-de-wall-street.gif" class="d-block w-100" alt="lobo de wall street"></a>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -66,121 +86,74 @@
         <div class="carousel__miniaturas">
             <div class="carousel__miniaturas__div">
                 <div class="carousel__miniaturas__item">
-                    <a class="miniaturas__peliculas" href="index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="carousel__miniaturas__item">
-                    <a class="miniaturas__peliculas" href="index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="carousel__miniaturas__item">
-                    <a class="miniaturas__peliculas" href="index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 2">
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="inicio__peliculas">
+        <div class="ver_todas">
             <h2 class="">peliculas</h2>
-            <form class="form__ver_todos" action="index.html">
-                <button class="ver_todos__button" type="submit">
-                    <span>ver todas</span>
-                </button>
-            </form>
+            <a class="ver_todas__button" href="contenido/peliculas_categorias.html">ver todas</a>
         </div>
         <div class="miniaturas">
-            <div class="miniaturas__div">
-                <div>
-                    <a class="miniaturas__peliculas" href="index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
+            <figure>
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
                     </a>
-                </div>
-                <div class="miniaturas__peliculas__name">
-                    <span class="miniaturas__peliculas__name--sub">El lobo de wall street</span>
-                </div>
-            </div>
-            <div class="miniaturas__div">
-                <a class="miniaturas__peliculas" href="index.html">
-                <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                </a>
-                <div class="miniaturas__peliculas__name">
-                    <span class="miniaturas__peliculas__name--sub">El lobo de wall street</span>
-                </div>
-            </div>
-            <div class="miniaturas__div">
-                <a class="miniaturas__peliculas" href="index.html">
-                <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                </a>
-                <div class="miniaturas__peliculas__name">
-                    <span class="miniaturas__peliculas__name--sub">El lobo de wall street</span>
-                </div>
-            </div>
-            <div class="miniaturas__div">
-                <a class="miniaturas__peliculas" href="index.html">
-                <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                </a>
-                <div class="miniaturas__peliculas__name">
-                    <span class="miniaturas__peliculas__name--sub">El lobo de wall street</span>
-                </div>
-            </div>
-            <div class="miniaturas__div">
-                <a class="miniaturas__peliculas" href="index.html">
-                <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                </a>
-                <div class="miniaturas__peliculas__name">
-                    <span class="miniaturas__peliculas__name--sub">El lobo de wall street</span>
-                </div>
-            </div>
-            <div class="miniaturas__div">
-                <a class="miniaturas__peliculas" href="index.html">
-                <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                </a>
-                <div class="miniaturas__peliculas__name">
-                    <span class="miniaturas__peliculas__name--sub">El lobo de wall street</span>
-                </div>
+                    <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+            </figure>
+            <figure>
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
+                    </a>
+                    <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+            </figure>
+            <figure>
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
+                    </a>
+                    <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+            </figure>
+            <figure>
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
+                    </a>
+                    <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+            </figure>
+            <figure>
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
+                    </a>
+                    <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+            </figure>
+            <figure>
+                    <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                    <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="pelicula 1">
+                    </a>
+                    <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+            </figure>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <footer>
         <nav class="footer__nav">
-            <ul>
-                <li>
-                    <form class="nav__form" action="index.html">
-                        <button class="nav__button" type="submit">
-                            <img class="nav__img img--inicio" src="imagenes\iconos\icono-inicio.png" alt="Volver">
-                            <span class="nav__span nav__span--inicio">Inicio</span>
-                        </button>
-                    </form>
-                </li>
-                <li>
-                    <form class="nav__form" action="contenido\peliculas.html">
-                        <button class="nav__button" type="submit">
-                            <img class="nav__img img--inicio" src="imagenes\iconos\icono-peliculas.svg" alt="Volver">
-                            <span class="nav__span nav__span--inicio">Peliculas</span>
-                        </button>
-                    </form>
-                </li>
-                <li>
-                    <form class="nav__form" action="index.html">
-                        <button class="nav__button" type="submit">
-                            <img class="nav__img img--compras" src="imagenes\iconos\icono-compras.png" alt="Volver">
-                            <span class="nav__span nav__span--compras">Compras</span>
-                        </button>
-                    </form>
-                </li>
-                <li>
-                    <form class="nav__form" action="index.html">
-                        <button class="nav__button" type="submit">
-                            <img class="nav__img img--compras" src="imagenes\iconos\icono-perfil.png" alt="Volver">
-                            <span class="nav__span nav__span--compras">Perfil</span>
-                        </button>
-                    </form>
-                </li>
-            </ul>
+            <form class="nav__form" action="index.html">
+                <button class="footer__nav__button" type="submit">
+                    <img class="footer__nav__img img__perfil--user" src="imagenes\iconos\icono-inicio.png" alt="icono inicio">
+                </button>
+            </form>
+            <div class="footer__nav__title">
+                <h2 class="footer__nav__title nav__span--compras">inicio</h2>
+            </div>
+
+            <form class="nav__form" action="index.html">
+                <button class="footer__nav__button" type="submit">
+                    <img class="footer__nav__img" src="imagenes\iconos\icono-perfil-header.png" alt="Volver">
+                </button>
+            </form>
         </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

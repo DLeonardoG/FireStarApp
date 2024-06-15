@@ -1,4 +1,15 @@
-.inicio__peliculas {
+body {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-size: 5vw;
+    margin: 10% 0 15%;
+}
+.ver_todas {
     padding: 1vh 0;
     width: 100%;
     display: flex;
@@ -7,17 +18,16 @@
     align-items: center;
     margin: 0;
 }
-.inicio__peliculas h2 {
+.ver_todas h2 {
     font-size: 1.5em;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
     font-weight: bold;
-    color: #FF402F;
     color: #2F2F2F;
     color: #fff;
 }
-.ver_todos__button {
+.ver_todas__button {
     /* background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B); */
     background-color: #2F2F2F;
     color: white;
@@ -31,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 .miniaturas__peliculas__imagen {
     border-radius: 8px;
@@ -38,21 +49,15 @@
     height: auto;
     box-shadow: 0 0 5px #000;
 }
-.miniaturas__div {
-    display: flex;
-    flex-direction: column;
-}
-.miniaturas__peliculas__name {
-    
-}
-.miniaturas__peliculas__name--sub {
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-    font-weight: 100;
-    color: #fff;
+.miniaturas__peliculas__nombre{
     text-align: center;
-    line-height: 0;
+    font-size: 0.8rem;
+    color: #fff;
+    display: block;
+    font-weight: lighter;
+    line-height: 1;
+    padding: 0;
+
 }
 .miniaturas {
     display: grid;
