@@ -6,6 +6,23 @@ main {
     margin: 0;
     margin-bottom: 8vh;
 }
+
+.scale-up-bottom{
+    animation:scale-up-bottom 1.4s; 
+} 
+
+@keyframes scale-up-bottom {
+    0%{
+        transform:scale(.5);
+        transform-origin:center bottom
+    }
+    100%{
+        transform:scale(1);
+        transform-origin:
+        center bottom
+    }
+}
+
 .inicio {
     /* display: flex;
     flex-wrap: wrap;

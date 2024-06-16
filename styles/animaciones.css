@@ -1,0 +1,110 @@
+.pago__button{
+    animation:scale-up-bottom 5s infinite; 
+} 
+
+@keyframes scale-up-bottom {
+    0%{
+        background-color: #3182ce;
+    }
+    50%{
+        transform:scale(1);
+        transform-origin:center bottom;
+        background-color: #c64747;
+    }
+    60%{
+        background-color: #3182ce;
+    }
+    80%{
+        transform:scale(1);
+        transform-origin:center bottom;
+        background-color: #0b2a47;
+    }
+    100%{
+        background-color: #3182ce;
+    }
+}
+.pago__button--transparente {
+    animation: none;
+}
+main{
+    animation:entrada 1s linear both
+} 
+@keyframes entrada{
+    0%{
+        filter:blur(12px);
+        opacity:0
+    }
+    100%{
+        filter:blur(0);
+        opacity:1
+        
+    }
+}
+
+
+.compra__item--title{
+    animation:tracking-in-contract 10s linear both infinite
+} 
+@keyframes tracking-in-contract{
+    0%{
+        opacity: 1;
+        color: #d51cd5;
+        letter-spacing:.1em
+    }
+    10%{
+        opacity: 1;
+        color: #5a81d7;
+        letter-spacing:normal
+    }
+    20%{
+        opacity: 1;
+        color: #38a423;
+        letter-spacing:normal
+    }
+    30%{
+        letter-spacing:normal;
+        opacity:1
+    }
+    40%{
+        letter-spacing:normal;
+        opacity:1
+    }
+    50%{
+        letter-spacing:normal;
+        opacity:1
+    }
+    60%{
+        letter-spacing:normal;
+        opacity:1
+    }
+    70%{
+        opacity: 1;
+        color: #38a423;
+        letter-spacing:.1em
+    }
+    80%{
+        letter-spacing:normal;
+        opacity:1
+    }
+    90%{
+        letter-spacing:normal;
+        opacity:1
+    }
+    100%{
+        opacity: 1;
+        color: #d51cd5;
+        letter-spacing:.1em
+    }
+}
+
+/* body{
+    animation:slide-left 0.4s linear both
+}
+@keyframes slide-left{
+    0%{
+        transform:translateX(0)
+    }
+    100%{
+        transform:translateX(-100px)
+    }
+} */
