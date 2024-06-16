@@ -11,24 +11,45 @@
     <link rel="stylesheet" href="../styles/miniaturas.css">
     <link rel="stylesheet" href="../styles/barra-footer.css">
     <!-- <link rel="stylesheet" media="screen and (min-width:450px)" href="../styles/loque.css"> -->
-    <link rel="stylesheet" href="../styles/carrito.css"> <!-- Asegúrate de agregar esta línea -->
+    <link rel="stylesheet" href="../styles/carrito.css">
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <form class="nav__form" action="../../../index.html">
-                <button class="header__nav__button" type="submit">
-                    <img class="header__nav__img img__perfil--user" src="../imagenes/iconos/icono-compras.png" alt="icono inicio">
-                </button>
-            </form>
-            <div class="header__nav__title">
-                <h1 class="header__nav__title nav__span--compras">carrito</h1>
-            </div>
-            <form class="nav__form" action="../../../index.html">
-                <button class="header__nav__button" type="submit">
-                    <img class="header__nav__img" src="../imagenes/iconos/icono-perfil-header.png" alt="Volver">
-                </button>
-            </form>
+        <nav>
+            <ul class="lista header__nav">
+                <li>
+                    <form class="nav__form" action="../index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes\iconos\icono-inicio.png" alt="inicio">
+                            <span class="nav__span nav__span--inicio">Inicio</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="peliculas_categorias.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes/iconos/icono-peliculas.svg" alt="Peliculas">
+                            <span class="nav__span nav__span--inicio">Peliculas</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="#">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="../imagenes\iconos\icono-compras.png" alt="Compras">
+                            <span class="nav__span nav__span--compras">Compras</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="#">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="../imagenes\iconos\icono-perfil.png" alt="Perfil">
+                            <span class="nav__span nav__span--compras">Perfil</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -138,30 +159,20 @@
         </div>
     </main>
     <footer>
-        <nav class="footer__nav">
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--inicio" src="../imagenes/iconos/icono-inicio.png" alt="Volver">
-                    <span class="nav__span nav__span--inicio">Inicio</span>
-                </button>
-            </form>
-            <form class="nav__form" action="peliculas.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img nav__icono--peliculas" src="../imagenes/iconos/icono-peliculas.svg" alt="Volver">
-                </button>
-            </form>
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--compras" src="../imagenes/iconos/icono-compras.png" alt="Volver">
-                    <span class="nav__span nav__span--compras">Compras</span>
-                </button>
-            </form>
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--compras" src="../imagenes/iconos/icono-perfil.png" alt="Volver">
-                    <span class="nav__span nav__span--compras">Perfil</span>
-                </button>
-            </form>
+        <nav>
+            <ul class="footer__nav lista">
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-compras.png" alt="icono Peliculas"></a>
+                </li>
+                <li>
+                    <div class="footer__nav__title">
+                        <h2 class="footer__nav__title nav__span--compras">Compras</h2>
+                    </div>
+                </li>
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
+                </li>
+            </ul>
         </nav>
     </footer>
 </body>

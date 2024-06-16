@@ -6,28 +6,29 @@
     <title>FireStarApp</title>
     <link rel="icon" href="../../../imagenes\iconos\icono-peliculas.svg">
     <link rel="stylesheet" href="../../../styles\barra-header.css">
-    <link rel="stylesheet" href="../../../styles/descripcion.css">
     <link rel="stylesheet" href="../../../styles/carousel.css">
+    <link rel="stylesheet" href="../../../styles/video.css">
     <link rel="stylesheet" href="../../../styles/botones.css">
     <link rel="stylesheet" href="../../../styles\barra-footer.css">
     <link rel="stylesheet" href="../../../styles\miniaturas.css">
+    <link rel="stylesheet" href="../../../styles/descripcion.css">
 </head>
 <body>
     <header>
-        <div class="descripcion__gif">
-        </div>
         <div class="video-wrapper">
             <div class="video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="ruta-a-tu-video.mp4" type="video/mp4">
+                <video autoplay muted loop playsinline controls>
+                    <source src="../../../imagenes/descripciones/videos/video_lobo-de-wall-street.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </div>
         </div>
-        <h2 class="descripcion__title">El lobo de wall street</h2>
+        <!-- <div class="descripcion__gif">
+        </div> -->
     </header>
     <main class="main__descripcion">
         <div class="descripcion">
+            <h2 class="descripcion__title">El lobo de wall street</h2>
             <ul class="lista">
                 <li><span><b>Nacionalidad:</b> EEUU.</span></li>
                 <li><span><b>Año:</b> 2013.</span></li>
@@ -78,11 +79,11 @@
         <nav>
             <ul class="footer__nav lista">
                 <li>
-                    <a class="footer__nav__button" href="../../peliculas_categorias.html"><img class="footer__nav__img footer__nav__img--imagen" src="../../../imagenes/iconos/icono-peliculas.svg" alt="icono Peliculas"></a>
+                    <a class="footer__nav__button" href="../../peliculas_categorias.html"><img class="footer__nav__img footer__nav__img--imagen" src="../../../imagenes/iconos/icono-volver.svg" alt="icono Peliculas"></a>
                 </li>
                 <li>
                     <div class="footer__nav__title">
-                        <h2 class="footer__nav__title nav__span--compras">accion</h2>
+                        <h2 class="footer__nav__title nav__span--compras">pelicula</h2>
                     </div>
                 </li>
                 <li>
