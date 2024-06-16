@@ -8,7 +8,7 @@ body {
     background-color: #000000;
     font-size: 5vw;
 }
-.lista, .lista li {
+.lista,li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -21,6 +21,7 @@ body {
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    margin-top: 5%;
 }
 .ver_todas h2 {
     font-size: 1.5em;
@@ -58,7 +59,7 @@ body {
     font-size: 0.8rem;
     color: #fff;
     display: block;
-    font-weight: lighter;
+    font-weight: normal;
     line-height: 1;
     padding: 0;
 
@@ -72,6 +73,66 @@ body {
         );
     gap: 2%;
     margin: 0 3%;
+}
+@media (max-width: 260px) {
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(80px, 1fr)
+            );
+    }
+}
+@media (min-width: 398px) {
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(150px, 1fr)
+            );
+    }
+}
+@media (min-width: 497px) {
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(170px, 1fr)
+            );
+    }
+}
+@media (min-width: 497px) {
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(170px, 1fr)
+            );
+    }
+}
+@media (min-width: 565px) {
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(200px, 1fr)
+            );
+    }
+}
+@media (min-width: 657px) {
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(270px, 1fr)
+            );
+    }
 }
 figure,a {
     margin: 0;
