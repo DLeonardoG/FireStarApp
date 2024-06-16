@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireStarApp</title>
-    <link rel="icon" href="../imagenes\iconos\logo-pestaña.png">
+    <link rel="icon" href="../imagenes\iconos/icono-peliculas.svg">
     <link rel="stylesheet" href="../styles\peliculas.css">
     <link rel="stylesheet" href="../styles\barra-header.css">
     <link rel="stylesheet" href="../styles/miniaturas.css">
@@ -13,213 +13,87 @@
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <form class="nav__form" action="../../../index.html">
-                <button class="header__nav__button" type="submit">
-                    <img class="header__nav__img img__perfil--user" src="../imagenes\iconos\icono-peliculas.svg" alt="icono inicio">
-                </button>
-            </form>
-            <div class="header__nav__title">
-                <h1 class="header__nav__title nav__span--compras">peliculas</h1>
-            </div>
-            <form class="nav__form" action="../../../index.html">
-                <button class="header__nav__button" type="submit">
-                    <img class="header__nav__img" src="../imagenes\iconos\icono-perfil-header.png" alt="Volver">
-                </button>
-            </form>
+        <nav>
+            <ul class="lista header__nav">
+                <li>
+                    <form class="nav__form" action="../index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes\iconos\icono-inicio.png" alt="inicio">
+                            <span class="nav__span nav__span--inicio">Inicio</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="peliculas_categorias.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes\iconos\icono-peliculas.svg" alt="Peliculas">
+                            <span class="nav__span nav__span--inicio">Peliculas</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="carrito.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="../imagenes\iconos\icono-compras.png" alt="Compras">
+                            <span class="nav__span nav__span--compras">Compras</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="../index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="imagenes\iconos\icono-perfil.png" alt="Perfil">
+                            <span class="nav__span nav__span--compras">Perfil</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
         </nav>
     </header>
-    <section class="categorias-peliculas">
-        <div>
-            <div class="inicio__peliculas">
-                <h2 class="">accion</h2>
-                <form class="form__ver_todos" action="peliculas\ver_todos\peliculas_ver_todas_accion.html">
-                    <button class="ver_todos__button" type="submit">
-                        <span>ver todas</span>
-                    </button>
-                </form>
-            </div>
-            <div class="miniaturas">
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                    </a>
-                </div>
+    <section class="pc">
+        <div class="pc__contenedor">
+            <div class="pc__mensaje">
+                <h1>No sirve</h1>
             </div>
         </div>
-        <hr>
-        <div>
-            <div class="inicio__peliculas">
-                <h2 class="">Musica</h2>
-                <form class="form__ver_todos" action="peliculas\ver_todos\peliculas_ver_todas_accion.html">
-                    <button class="ver_todos__button" type="submit">
-                        <span>ver todas</span>
-                    </button>
-                </form>
-            </div>
-            <div class="miniaturas">
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="inicio__peliculas">
-                <h2 class="">Deporte</h2>
-                <form class="form__ver_todos" action="peliculas\ver_todos\peliculas_ver_todas_accion.html">
-                    <button class="ver_todos__button" type="submit">
-                        <span>ver todas</span>
-                    </button>
-                </form>
-            </div>
-            <div class="miniaturas">
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="inicio__peliculas">
-                <h2 class="">Ciencia</h2>
-                <form class="form__ver_todos" action="peliculas\ver_todos\peliculas_ver_todas_accion.html">
-                    <button class="ver_todos__button" type="submit">
-                        <span>ver todas</span>
-                    </button>
-                </form>
-            </div>
-            <div class="miniaturas">
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="inicio__peliculas">
-                <h2 class="">arte</h2>
-                <form class="form__ver_todos" action="peliculas\ver_todos\peliculas_ver_todas_accion.html">
-                    <button class="ver_todos__button" type="submit">
-                        <span>ver todas</span>
-                    </button>
-                </form>
-            </div>
-            <div class="miniaturas">
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="inicio__peliculas">
-                <h2 class="">accion</h2>
-                <form class="form__ver_todos" action="peliculas\ver_todos\peliculas_ver_todas_accion.html">
-                    <button class="ver_todos__button" type="submit">
-                        <span>ver todas</span>
-                    </button>
-                </form>
-            </div>
-            <div class="miniaturas">
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-cristiano-ronaldo.png" alt="pelicula 1">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-messi.png" alt="pelicula 2">
-                    </a>
-                </div>
-                <div class="miniaturas__div">
-                    <a class="miniaturas__peliculas" href="../../index.html">
-                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-wall_street.png" alt="pelicula 3">
-                    </a>
-                </div>
-            </div>
-        </div>
-
     </section>
+    <main class="categorias-peliculas">
+        <section>
+            <div class="ver_todas">
+                <h2 class="">peliculas</h2>
+                <a class="ver_todas__button" href="peliculas/ver_todos/peliculas_ver_todas_accion.html">ver todas</a>
+            </div>
+            <div class="miniaturas">
+                <figure>
+                        <a class="miniaturas__peliculas" href="peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                        <img class="miniaturas__peliculas__imagen"  src="imagenes/miniaturas/mini-wall_street.png" alt="el lobo de wall street">
+                        </a>
+                        <figcaption><span class="miniaturas__peliculas__nombre">El lobo de wall street</span></figcaption>
+                </figure>  
+        </section>
+        <hr>
+    </main>
     <footer>
-        <nav class="footer__nav">
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--inicio" src="../imagenes\iconos\icono-inicio.png" alt="Volver">
-                    <span class="nav__span nav__span--inicio">Inicio</span>
-                </button>
-            </form>
-            <form class="nav__form" action="peliculas.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img nav__icono--peliculas" src="../imagenes\iconos\icono-peliculas.svg" alt="Volver">
-                </button>
-            </form>
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--compras" src="../imagenes\iconos\icono-compras.png" alt="Volver">
-                    <span class="nav__span nav__span--compras">Compras</span>
-                </button>
-            </form>
-            <form class="nav__form" action="../../../index.html">
-                <button class="nav__button" type="submit">
-                    <img class="nav__img img--compras" src="../imagenes\iconos\icono-perfil.png" alt="Volver">
-                    <span class="nav__span nav__span--compras">Perfil</span>
-                </button>
-            </form>
+        <nav>
+            <ul class="footer__nav lista">
+                <li>
+                    <form class="nav__form" action="index.html">
+                        <button class="footer__nav__button" type="submit"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-inicio.png" alt="icono inicio">
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <div class="footer__nav__title">
+                        <h2 class="footer__nav__title nav__span--compras">inicio</h2>
+                    </div>
+                </li>
+                <li>
+                    <form class="nav__form" action="index.html">
+                        <button class="footer__nav__button" type="submit"><img class="footer__nav__img" src="../imagenes/iconos/icono-perfil-header.png" alt="icono Perfil">
+                        </button>
+                    </form>
+                </li>
+            </ul>
         </nav>
     </footer>
 </body>

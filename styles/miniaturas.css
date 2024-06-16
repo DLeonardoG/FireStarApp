@@ -9,6 +9,11 @@ body {
     font-size: 5vw;
     margin: 10% 0 15%;
 }
+.lista, .lista li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .ver_todas {
     padding: 1vh 0;
     width: 100%;
