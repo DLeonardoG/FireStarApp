@@ -68,7 +68,7 @@ body {
     grid-template-columns: 
         repeat(
             auto-fit,
-            minmax(100px, 1fr)
+            minmax(120px, 1fr)
         );
     gap: 2%;
     margin: 0 3%;

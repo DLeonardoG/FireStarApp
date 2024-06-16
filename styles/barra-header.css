@@ -48,6 +48,10 @@
     margin: 0;
     padding: 0;
 }
+.nav__span--azul {
+    color: #3182CE;
+    font-weight: bold;
+}
 .nav__icono--peliculas {
     padding: 0 1vw 10%;
     border-bottom: 0.5vh #f4f4f4 solid;
