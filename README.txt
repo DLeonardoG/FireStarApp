@@ -44,7 +44,8 @@ Este proyecto es un ejemplo de maquetado de una tienda en línea para comprar pe
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla del Inicio](imagenes\readme\inicio.jpeg)
+![Captura de Pantalla del Inicio]
+(https://github.com/DLeonardoG/PROYECTO-FILTRO_GONZALEZ_DAVID_GOMEZ_LEONARDO\readme\inicio.jpeg")
 
 ![Captura de Pantalla del Catálogo](screenshots/catalog.png)
 
