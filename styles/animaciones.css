@@ -108,21 +108,6 @@ main{
         transform:translateX(-100px)
     }
 } */
-@media (max-width: 768px) {
-    . {
-        padding: 10px;
-    }
-    
-    .profile-card {
-        width: calc(50% - 40px); /* Dos perfiles por fila en pantallas pequeñas */
-    }
-    
-    .profile-card img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
 #modal-boton {
     display: none;
 }
@@ -139,9 +124,6 @@ main{
     align-items: center;
     z-index: 100;
 }
-.modal-envoltura--pc {
-    box-sizing: border-box;
-}
 .modal {
     background-color: #fff;
     padding: 7%;
@@ -156,21 +138,12 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 40px;
+    overflow: hidden;
 }
-.modal--pc {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-}
-
 .modal h2 {
     margin: 0;
     font-size: 9vw;
     box-sizing: border-box;
-}
-.modal--pc h2 {
-    font-size: 5vw;
-    padding: 0;
 }
 .modal p {
     margin: 0;
@@ -220,6 +193,9 @@ main{
     text-align: center;
     font-weight: 600;
 }
+.pc {
+    display: none;
+}
 .texto_typewriter__texto::before {
     content: "";
     width: 2px;
@@ -230,6 +206,66 @@ main{
     border-radius: 4px;
     animation: titilar .36s infinite;
 }
+.boton-salir {
+    display: none;
+}
+@media (min-width: 499px) and (max-width: 1200px){
+    .texto_typewriter__texto {
+        color: #333;
+        letter-spacing: 1px;
+        animation: texto__animado 3s both steps(7);
+    }
+    .modal {
+        width: 50%;
+        padding: 3%;
+        gap: 0;
+        overflow: hidden;
+    }
+    .celular {
+        display: none;
+    }
+    .pc {
+        display: block;
+    }
+    .modal h2 {
+        font-size: 6vw;
+    }
+
+    .modal p {
+        font-size: 1.8vw;
+    }
+
+    .close-btn {
+        padding: 1.5% 3%;
+        font-size: 1.8vw;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+
+    .boton-salir {
+        display: block;
+        text-align: center;
+        margin-top: 4%;
+        text-decoration: none;
+        background-color: transparent;
+        color: #333;
+        padding: 1.5% 3%;
+        border: 2px solid #333;
+        border-radius: 10px;
+        font-size: 1.8vw;
+        cursor: pointer;
+        order: 4;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .boton-salir:hover {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+
 @keyframes texto__animado {
     from {
         width: 0%;
