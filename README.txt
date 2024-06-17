@@ -44,7 +44,7 @@ Este proyecto es un ejemplo de maquetado de una tienda en línea para comprar pe
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla del Inicio](imagenes/readme/inicio.png)
+![Captura de Pantalla del Inicio](imagenes\readme\inicio.jpeg)
 
 ![Captura de Pantalla del Catálogo](screenshots/catalog.png)
 
