@@ -138,7 +138,6 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 40px;
-    overflow: hidden;
 }
 .modal h2 {
     margin: 0;
@@ -193,9 +192,6 @@ main{
     text-align: center;
     font-weight: 600;
 }
-.computador {
-    display: none;
-}
 .texto_typewriter__texto::before {
     content: "";
     width: 2px;
@@ -209,19 +205,16 @@ main{
 .boton-salir {
     display: none;
 }
-
-
-
-@media (min-width: 773px) and (max-width: 999px) {
-
+.celular {
+    display: none;
+}
+@media (min-width: 550px) and (max-width: 999px){
     .modal {
         width: 70%;
         padding: 20px;
-        overflow: hidden;
         box-sizing: border-box;
         gap:0;
     }
-
     .modal h2 {
         font-size: 40px;
     }
@@ -250,21 +243,14 @@ main{
         order: 4;
         transition: background-color 0.3s, color 0.3s;
     }
-
+    .celular {
+        display: block;
+    }
     .boton-salir:hover {
         background-color: #333;
         color: #fff;
     }
-
-    .computador {
-        display: none;
-    }
-
-    .celular {
-        display: none;
-    }
 }
-
 @media (min-width: 1000px){
     .texto_typewriter__texto {
         color: #333;
@@ -278,9 +264,6 @@ main{
         overflow: hidden;
     }
     .celular {
-        display: none;
-    }
-    .computador {
         display: block;
     }
     .modal h2 {
@@ -372,10 +355,4 @@ aside {
 }
 .computador {
     display: none;
-}
-
-@media (min-width: 768px) {
-    .computador {
-        display: block;
-    }
 }

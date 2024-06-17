@@ -96,20 +96,6 @@ main {
     margin-top: 0;
     margin-bottom: 15%;
 }
-@media (max-width: 768px) {
-    .profiles {
-        padding: 10px;
-    }
-    
-    .profile-card {
-        width: calc(50% - 40px); /* Dos perfiles por fila en pantallas pequeñas */
-    }
-    
-    .profile-card img {
-        width: 120px;
-        height: 120px;
-    }
-}
 .modal {
     position: absolute;
     background-color: #0009;
