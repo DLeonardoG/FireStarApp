@@ -58,3 +58,7 @@
     border-bottom-right-radius: 1%;
     border-bottom-left-radius: 1%;
 }
+.accion,.animacion {
+    margin-bottom: 9%;
+    margin-top: 4%;
+}
