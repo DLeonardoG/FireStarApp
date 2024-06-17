@@ -52,3 +52,6 @@ body {
     text-transform: capitalize;
     font-weight: bold;
 }
+b {
+    color: #ff0000;
+}

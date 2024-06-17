@@ -1,31 +1,3 @@
-
-.pc {
-    display: none;
-}
-
-.scale-up-bottom{
-    animation:scale-up-bottom 1.4s; 
-} 
-
-@keyframes scale-up-bottom {
-    0%{
-        transform:scale(.5);
-        transform-origin:center bottom
-    }
-    100%{
-        transform:scale(1);
-        transform-origin:
-        center bottom
-    }
-}
-
-.inicio {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    margin-top: 20px; */
-}
 .top_del_mes {
     box-sizing: border-box;
     padding: 0;
@@ -43,8 +15,6 @@
     padding: 0;
     text-transform: capitalize;
     font-weight: bold;
-    color: #FF402F;
-    color: #2F2F2F;
     color: #fff;
     margin: 0;
     padding: 0;
