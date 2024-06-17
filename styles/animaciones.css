@@ -193,7 +193,7 @@ main{
     text-align: center;
     font-weight: 600;
 }
-.pc {
+.computador {
     display: none;
 }
 .texto_typewriter__texto::before {
@@ -209,7 +209,63 @@ main{
 .boton-salir {
     display: none;
 }
-@media (min-width: 499px) and (max-width: 1200px){
+
+
+
+@media (min-width: 773px) and (max-width: 999px) {
+
+    .modal {
+        width: 70%;
+        padding: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+        gap:0;
+    }
+
+    .modal h2 {
+        font-size: 40px;
+    }
+
+    .modal p {
+        font-size: 20px;
+    }
+
+    .close-btn {
+        padding: 13px;
+        font-size: 15px;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+
+    .boton-salir {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background-color: transparent;
+        color: #333;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 3% 5%;
+        font-size: 15px;
+        order: 4;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .boton-salir:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .computador {
+        display: none;
+    }
+
+    .celular {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px){
     .texto_typewriter__texto {
         color: #333;
         letter-spacing: 1px;
@@ -224,7 +280,7 @@ main{
     .celular {
         display: none;
     }
-    .pc {
+    .computador {
         display: block;
     }
     .modal h2 {
@@ -314,12 +370,12 @@ aside {
     margin: 0;
     padding: 0;
 }
-.pc {
+.computador {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .pc {
+    .computador {
         display: block;
     }
 }
