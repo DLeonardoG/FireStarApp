@@ -41,5 +41,11 @@ PROYECTO-FILTRO_GONZALEZ_DAVID_GOMEZ_LEONARDO/ │
 
 styles: Carpeta que contiene todo los diseños css. contenido: Carpeta que contiene todos los archivos html. imagenes: Carpeta que contiene todo el contenido de la vista del usuario (imagenes, videos) del proyecto. index.html: Contiene la pagina principal de la web. styles.css: contiene los estilos del index.html.
 
-Mockup de la pagina
+imagenes de la pagina
+
 imagenes/readme/inicio.jpeg
+imagenes/readme/categorias.jpeg
+imagenes/readme/categoria_especifica.jpeg
+imagenes/readme/descripcion_1.jpeg
+imagenes/readme/descripcion_2.jpeg
+imagenes/readme/carrito_de_compras.jpeg
