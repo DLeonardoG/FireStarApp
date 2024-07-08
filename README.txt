@@ -1,51 +1,58 @@
-TIENDA VIRTUAL DE Blue Ray ORIENTADA A CELULAR
+# FireStarApp 🌏🔥
 
-1. Nombre: FireStarApp
+## Tabla de contenido
+| Indice | Título  |
+|--|--|
+| 1. | [Descripción](#Descripción) |
+| 2. | [Tecnologías Utilizadas](#TecnologíasUtilizadas) |
+| 3. | [Uso del Repositorio](#UsodelRepositorio) |
+| 4. | [Instrucciones de Ejecución](#InstruccionesdeEjecución) |
+| 5. | [Imagenes de la pagina](#Imagenesdelapagina) |
+| 6. | [Contacto](#Contacto) |
 
-## Estructura del Proyecto
+#### Descripción 🚀
 
-El proyecto se estructuro de la siguiente manera:
-Proyecto de Página Web Móvil de Compras en una tienda Online, este repositorio del proyecto tiene solo como perspectiva principal los dispositivos moviles, utilizando solamente HTML y CSS puro sin libresias externas. La temática de la web son la compra de blue Rays ya sean clasicos o recientes, ademas tiene como objetivo principal brindar una experiencia de usuario fluida y que sea responsiva en dispositivos de caracter movil.
+El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es la maquetacion para una empresa de ventas de Blue Ray, diseñada para visualizar y comprar las peliculas mas actualizadas y de mejor calidad a mejor precio.
 
-Descripción
+#### Características Principales 🧮
 
-El diseño es especialmente para móviles. En resoluciones de escritorio, la web le informara al usuario con un mensaje indicando que la vista no está disponible para esa resolución, dejando que el usuario escoja continuar o salir.
+1. **Peliculas** 🎬: Permite registrar visualizar el catalogo de las peliculas añadidas.
 
-Demo
+2. **Descripcion** 📄: Permite visualizar la descripcion de cada pelicula.
 
-Características *Diseño Responsivo: Principalmente para moviles con una presentación fluida y que se adapta.
+3. **Categorias** 📄: Permite ver las peliculas divididas por categorias.
 
-*HTML Semántico: Uso correcto de elementos HTML, semantica para una estructura clara y accesible.
+4. **Compras** 🛍️: Carrito de compras permite ver las compras y lo añadido para comprar despues.
 
-*CSS Cohesivo: Estilos CSS con consistencia, bien organizados, creando una experiencia visual hermosa.
 
-*Contenido de autoria propia: Todo el contenido es redactado desde cero, asegurando originalidad y claridad.
+#### Tecnologías Utilizadas 🖥️
 
-*Indicador de Disponibilidad para Escritorio: Mensaje claro cuando el sitio es accedido desde una resolución especifica de escritorio.
+- **Html** : Se uso para el contenido de la pagina.
+- **Css** : Se uso para el diseño de la pagina.
 
-Estructura del proyecto
+#### Uso del Repositorio 📝
 
-PROYECTO-FILTRO_GONZALEZ_DAVID_GOMEZ_LEONARDO/ │
+Este repositorio contiene el código fuente del proyecto FireStarApp, conteniendo toda la maquetacion de la pagina. Cada directorio y archivo está estructurado para facilitar despliegue de la aplicación.
 
-├── contenido
+#### Instrucciones de Ejecución 📐
 
-├── imagenes
+1. Clona el repositorio a tu máquina local. 
+2. Configura adecuadamente todo lo adecuado para abrir el index de html.
+3. Abre la app con tu navegador adecuado.
 
-├── styles
+### Imagenes de la pagina
 
-├── index.html
+<img src="imagenes/readme/inicio.jpeg" alt="Descripción de la imagen">
+<img src="imagenes/readme/categorias.jpeg" alt="Descripción de la imagen">
+<img src="imagenes/readme/categoria_especifica.jpeg.jpeg" alt="Descripción de la imagen">
+<img src="imagenes/readme/descripcion_1.jpeg" alt="Descripción de la imagen">
+<img src="imagenes/readme/descripcion_2.jpeg" alt="Descripción de la imagen">
+<img src="imagenes/readme/carrito_de_compras.jpeg" alt="Descripción de la imagen">
 
-├── README.txt
+#### Autor 👤
 
-└── styles.css
+Leonardo Gonzalez
 
-styles: Carpeta que contiene todo los diseños css. contenido: Carpeta que contiene todos los archivos html. imagenes: Carpeta que contiene todo el contenido de la vista del usuario (imagenes, videos) del proyecto. index.html: Contiene la pagina principal de la web. styles.css: contiene los estilos del index.html.
+#### Contacto
 
-imagenes de la pagina
-
-imagenes/readme/inicio.jpeg
-imagenes/readme/categorias.jpeg
-imagenes/readme/categoria_especifica.jpeg
-imagenes/readme/descripcion_1.jpeg
-imagenes/readme/descripcion_2.jpeg
-imagenes/readme/carrito_de_compras.jpeg
+darkleonardog@gmail.com
