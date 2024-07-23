@@ -43,7 +43,7 @@ Este repositorio contiene el código fuente del proyecto FireStarApp, conteniend
 
 ## Imagenes
 
-<img src="imagenes/readme/inicio.jpeg" alt="Descripción de la imagen">
+<img src="imagenes/readme/inicio.jpeg" alt="Descripción de la imagen" height="10px">
 <img src="imagenes/readme/categorias.jpeg" alt="Descripción de la imagen">
 <img src="imagenes/readme/categoria_especifica.jpeg.jpeg" alt="Descripción de la imagen">
 <img src="imagenes/readme/descripcion_1.jpeg" alt="Descripción de la imagen">
