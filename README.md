@@ -11,11 +11,11 @@
 | 6. | [Imagenes de la pagina](#Imagenes) |
 | 7. | [Contacto](#Contacto) |
 
-#### Descripcion🚀
+## Descripcion🚀
 
 El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es la maquetacion para una empresa de ventas de Blue Ray, diseñada para visualizar y comprar las peliculas mas actualizadas y de mejor calidad a mejor precio.
 
-#### Características🧮
+## Características🧮
 
 1. **Peliculas** 🎬: Permite registrar visualizar el catalogo de las peliculas añadidas.
 
@@ -26,7 +26,7 @@ El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es
 4. **Compras** 🛍️: Carrito de compras permite ver las compras y lo añadido para comprar despues.
 
 
-#### Tecnologias🖥️
+## Tecnologias🖥️
 
 - **Html** : Se uso para el contenido de la pagina.
 - **Css** : Se uso para el diseño de la pagina.
@@ -35,13 +35,13 @@ El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es
 
 Este repositorio contiene el código fuente del proyecto FireStarApp, conteniendo toda la maquetacion de la pagina. Cada directorio y archivo está estructurado para facilitar despliegue de la aplicación.
 
-#### Instrucciones📐
+## Instrucciones📐
 
 1. Clona el repositorio a tu máquina local. 
 2. Configura adecuadamente todo lo adecuado para abrir el index de html.
 3. Abre la app con tu navegador adecuado.
 
-### Imagenes
+## Imagenes
 
 <img src="imagenes/readme/inicio.jpeg" alt="Descripción de la imagen">
 <img src="imagenes/readme/categorias.jpeg" alt="Descripción de la imagen">
@@ -50,10 +50,10 @@ Este repositorio contiene el código fuente del proyecto FireStarApp, conteniend
 <img src="imagenes/readme/descripcion_2.jpeg" alt="Descripción de la imagen">
 <img src="imagenes/readme/carrito_de_compras.jpeg" alt="Descripción de la imagen">
 
-#### Autor 👤
+## Autor 👤
 
 Leonardo Gonzalez
 
-#### Contacto
+## Contacto
 
 darkleonardog@gmail.com
