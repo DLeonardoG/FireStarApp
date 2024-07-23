@@ -31,7 +31,7 @@ El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es
 - **Html** : Se uso para el contenido de la pagina.
 - **Css** : Se uso para el diseño de la pagina.
 
-#### Uso📝
+## Uso📝
 
 Este repositorio contiene el código fuente del proyecto FireStarApp, conteniendo toda la maquetacion de la pagina. Cada directorio y archivo está estructurado para facilitar despliegue de la aplicación.
 
