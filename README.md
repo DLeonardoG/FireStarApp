@@ -28,7 +28,7 @@ El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es
 
 ## Tecnologias🖥️
 
-- **Html** : Se uso para el contenido de la pagina.
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) **Html** : Se uso para el contenido de la pagina.
 - **Css** : Se uso para el diseño de la pagina.
 
 ## Uso📝
