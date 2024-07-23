@@ -26,7 +26,9 @@ El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es
 4. **Compras** 🛍️: Carrito de compras permite ver las compras y lo añadido para comprar despues.
 
 
-## Tecnologias🖥️ ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+## Tecnologias🖥️ 
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 - **Html** : Se uso para el contenido de la pagina.
 - **Css** : Se uso para el diseño de la pagina.
