@@ -50,9 +50,9 @@ Este repositorio contiene el código fuente del proyecto FireStarApp, conteniend
 <img src="imagenes/readme/descripcion_1.jpeg" alt="Descripción de la imagen" height="500px"> <img src="imagenes/readme/descripcion_2.jpeg" alt="Descripción de la imagen" height="500px"> <img src="imagenes/readme/carrito_de_compras.jpeg" alt="Descripción de la imagen" height="500px">
 
 
-## Autor 👤
+## Autor👤
 
-Leonardo Gonzalez
+[Leonardo Gonzalez](https://github.com/DLeonardoG) 
 
 ## Contacto
 
