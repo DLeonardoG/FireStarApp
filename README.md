@@ -56,4 +56,4 @@ Este repositorio contiene el código fuente del proyecto FireStarApp, conteniend
 
 ## Contacto
 
-darkleonardog@gmail.com
+Linkedin: [Leonardo Gonzalez](https://www.linkedin.com/in/leonardo-gonzalez-302321311/) 
