@@ -134,6 +134,88 @@ body {
             );
     }
 }
+
+@media (min-width: 550px) and (max-width: 999px){
+    
+}
+@media (min-width: 1000px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        font-size: 5vw;
+    }
+    .lista,li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .ver_todas {
+        padding: 1vh 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        margin-top: 5%;
+    }
+    .ver_todas h2 {
+        font-size: 0.6em;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: #2F2F2F;
+        color: #fff;
+    }
+    .ver_todas__button {
+        /* background-image: linear-gradient(to left, #FF3833, #FF3A33, #FF8B4B); */
+        background-color: #2F2F2F;
+        color: white;
+        font-size: 0.6em;
+        padding: 0.5vh 8vw;
+        border: none;
+        border-radius: 20px;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .miniaturas__peliculas__imagen {
+        border-radius: 10%;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 5px #000;
+    }
+    .miniaturas__peliculas__nombre{
+        text-align: center;
+        font-size: 0.2rem;
+        color: #fff;
+        display: block;
+        font-weight: normal;
+        line-height: 1;
+        padding: 0;
+    
+    }
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(120px, 1fr)
+            );
+        gap: 3%;
+        margin: 0 3%;
+    }
+}
 figure,a {
     margin: 0;
     padding: 0;

@@ -209,7 +209,7 @@ main{
     display: none;
 }
 @media (min-width: 550px) and (max-width: 999px){
-    .modal {
+    /* .modal {
         width: 70%;
         padding: 20px;
         box-sizing: border-box;
@@ -221,16 +221,16 @@ main{
 
     .modal p {
         font-size: 20px;
-    }
+    } */
 
-    .close-btn {
+    /* .close-btn {
         padding: 13px;
         font-size: 15px;
         margin-top: 2px;
         cursor: pointer;
-    }
+    } */
 
-    .boton-salir {
+    /* .boton-salir {
         display: block;
         text-align: center;
         text-decoration: none;
@@ -242,17 +242,17 @@ main{
         font-size: 15px;
         order: 4;
         transition: background-color 0.3s, color 0.3s;
-    }
-    .celular {
+    } */
+    /* .celular {
         display: block;
-    }
-    .boton-salir:hover {
+    } */
+    /* .boton-salir:hover {
         background-color: #333;
         color: #fff;
-    }
+    } */
 }
 @media (min-width: 1000px){
-    .texto_typewriter__texto {
+    /* .texto_typewriter__texto {
         color: #333;
         letter-spacing: 1px;
         animation: texto__animado 3s both steps(7);
@@ -262,27 +262,27 @@ main{
         padding: 3%;
         gap: 0;
         overflow: hidden;
-    }
-    .celular {
+    } */
+    /* .celular {
         display: block;
-    }
-    .modal h2 {
+    } */
+    /* .modal h2 {
         font-size: 6vw;
     }
 
     .modal p {
         font-size: 1.8vw;
-    }
-
+    } */
+/* 
     .close-btn {
         padding: 1.5% 3%;
         font-size: 1.8vw;
         margin: 0;
         margin-top: 10%;
     }
+ */
 
-
-    .boton-salir {
+    /* .boton-salir {
         display: block;
         text-align: center;
         margin-top: 4%;
@@ -301,8 +301,10 @@ main{
     .boton-salir:hover {
         background-color: #333;
         color: #fff;
-    }
-}
+    } */
+
+    
+} 
 
 
 @keyframes texto__animado {

@@ -55,3 +55,63 @@ body {
 b {
     color: #ff0000;
 }
+@media (min-width: 550px) and (max-width: 999px){
+
+}   
+@media (min-width: 1000px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        font-size: 5vw;
+        margin: 0 0 0 6vw;
+    }
+    .footer__nav {
+        /* background-image: linear-gradient( #2E3034, #1E1D1D, #000000, #000000); */
+        background-color: #000000bd;
+        color: white;
+        padding: 0;
+        width: 94vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 1vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .footer__nav--descripcion {
+        position: fixed;
+    }
+    .footer__nav__button {
+        background-color: transparent;
+        color: white;
+        padding: 1vh 2vw;
+        border: none;
+        border-radius: none;
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__nav__img {
+        width: 3vw;
+        padding: 0;
+        margin: 0;
+    }
+    .footer__nav__title {
+        font-size: 0.7em;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}
