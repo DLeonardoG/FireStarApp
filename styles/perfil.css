@@ -54,3 +54,9 @@ main {
     color: #fff;
     margin-top: 8%;
 }
+@media (min-width: 550px) and (max-width: 999px){
+    
+}
+@media (min-width: 1000px){ 
+    
+}

@@ -190,7 +190,7 @@ body {
         text-decoration: none;
     }
     .miniaturas__peliculas__imagen {
-        border-radius: 10%;
+        border-radius: 15px;
         width: 100%;
         height: auto;
         box-shadow: 0 0 5px #000;
