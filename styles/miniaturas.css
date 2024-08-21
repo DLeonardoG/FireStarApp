@@ -165,7 +165,7 @@ body {
         margin-top: 5%;
     }
     .ver_todas h2 {
-        font-size: 0.6em;
+        font-size: 0.4rem;
         margin: 0;
         padding: 0;
         text-transform: capitalize;
@@ -178,7 +178,7 @@ body {
         background-color: #2F2F2F;
         color: white;
         font-size: 0.6em;
-        padding: 0.5vh 8vw;
+        padding: 0.5vh 4vw;
         border: none;
         border-radius: 20px;
         text-transform: capitalize;
@@ -188,6 +188,9 @@ body {
         justify-content: center;
         align-items: center;
         text-decoration: none;
+    }
+    .ver_todas__button {
+        font-size: 0.4rem;
     }
     .miniaturas__peliculas__imagen {
         border-radius: 15px;
@@ -214,6 +217,17 @@ body {
             );
         gap: 3%;
         margin: 0 3%;
+    }
+
+    /* para achiquitar las imagenes */
+    /* .categorias__miniaturas {
+        width: 80%;
+        margin: auto;
+    } */
+    .main__padding {
+        margin-bottom: 5%;
+        box-sizing: border-box;
+        padding: 0 5%;
     }
 }
 figure,a {
