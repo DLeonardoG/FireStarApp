@@ -1,0 +1,56 @@
+[
+    {
+        "id": "El lobo de wall street",
+        "titulo": "El lobo de wall street",
+        "imagen": "imagenes/miniaturas/mini-wall-street.svg",
+        "video" : "imagenes/descripciones/videos/video_lobo-de-wall-street.mp4",
+        "pais": "Estados Unidos",
+        "año" : "2013",
+        "genero" : "Comedia",
+        "director" : "Martin Scorsese",
+        "sinopsis" : "Película basada en hechos reales del corredor de bolsa neoyorquino Jordan Belfort. A mediados de los años 80, Belfort era un joven honrado que perseguía el sueño americano, pero pronto en la agencia de valores aprendió que lo más importante no era hacer ganar a sus clientes, sino ser ambicioso y ganar una buena comisión. Su enorme éxito y fortuna le valió el mote de “El lobo de Wall Street”. Dinero. Poder. Mujeres. Drogas. Las tentaciones abundaban y el temor a la ley era irrelevante. Jordan y su manada de lobos consideraban que la discreción era una cualidad anticuada; nunca se conformaban con lo que tenían.",
+        "reparto": "Leonardo DiCaprio, Jonah Hill, Margot Robbie.",
+        "duracion": "142 minutos",
+        "categoria": {
+            "nombre": "Comedia",
+            "id": "comedia"
+        },
+        "precio": 100000
+    },
+    {
+        "id": "El justiciero",
+        "titulo": "El justiciero",
+        "imagen": "imagenes/miniaturas/mini-el-justiciero.svg",
+        "video" : "imagenes/descripciones/videos/video_el_justiciero.mp4",
+        "país": "Estados Unidos",
+        "año" : "2014",
+        "genero" : "Acción, Thriller, Crimen",
+        "director" : "Antoine Fuqua",
+        "sinopsis" : "Nos presenta a Robert McCall, un man serio y reservado que lleva una vida tranquila trabajando en una tienda de mejoras para el hogar. Pero McCall tiene un pasado oscuro como ex-agente de operaciones encubiertas. Un día, conoce a Teri, una joven prostituta que está siendo explotada por unos mafiosos rusos. Cuando la pelada termina en el hospital por una golpiza, McCall decide salir de su retiro y usar sus habilidades letales para ayudarla. Se convierte en una especie de justiciero, enfrentándose a los mafiosos con una precisión y frialdad que dejan a todos boquiabiertos. En su misión de limpiar las calles y proteger a los inocentes, McCall demuestra que, aunque trate de vivir una vida tranquila, no ha perdido su toque para la acción y la justicia.",
+        "reparto": "Denzel Washington como Robert McCall, Marton Csokas como Teddy, Chloë Grace Moretz como Teri",
+        "duracion": "142 minutos",
+        "categoria": {
+            "nombre": "Accion",
+            "id": "accion"
+        },
+        "precio": 150000
+    },
+    {
+        "id": "Megamente",
+        "titulo": "Megamente",
+        "imagen": "imagenes/miniaturas/mini-megamente.svg",
+        "video" : "imagenes/descripciones/videos/video_megamente.mp4",
+        "país": "Estados Unidos",
+        "año" : "2010",
+        "genero" : "Animación, Acción, Comedia",
+        "director" : "Tom McGrat",
+        "sinopsis" : "Es una película animada que cuenta la historia de Megamind, un villano que se cree el más bacano de todos. Desde chiquito, Megamind ha estado en una rivalidad constante con Metro Man, el héroe de Metro City. Pero un día, Megamind logra vencer a Metro Man y toma el control de la ciudad. Sin embargo, pronto se da cuenta de que ser el malo de la película no es tan emocionante como pensaba. Para llenar el vacío en su vida, Megamind decide crear a un nuevo héroe, Titan, pero las cosas no salen como él espera y Titan se convierte en una amenaza para todos. Megamind, junto con su amiga Roxanne Ritchi, debe encontrar la manera de detener a Titan y demostrar que incluso los villanos pueden cambiar y convertirse en héroes inesperados.",
+        "reparto": "Will Ferrell, Brad Pitt, Tina Fey.",
+        "duracion": "142 minutos",
+        "categoria": {
+            "nombre": "Animacion",
+            "id": "animacion"
+        },
+        "precio": 90000
+    }
+]
