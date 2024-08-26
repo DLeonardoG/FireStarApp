@@ -62,10 +62,31 @@
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carrito">
                 <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
-
                 <div id="carrito-productos" class="carrito-productos disabled">
                     <!-- Esto se va a completar con el JS -->
-                </div>
+                    <div class="carrito-producto">
+    
+                        <img class="carrito-producto-imagen" src="../imagenes/miniaturas/mini-wall-street.svg" alt="${producto.titulo}">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>El lobo de wall street</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$10000p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$20000</p>
+                        </div>
+                        <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                        
+                    </div>
 
                 <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
