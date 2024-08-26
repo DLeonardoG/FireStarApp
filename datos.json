@@ -52,5 +52,23 @@
             "id": "animacion"
         },
         "precio": 90000
+    },
+    {
+        "id": "Kill Bill",
+        "titulo": "Kill Bill",
+        "imagen": "imagenes/miniaturas/mini-kill-bill.svg",
+        "video" : "imagenes/descripciones/videos/video_kill_bill.mp4",
+        "país": "Estados Unidos",
+        "año" : "2003",
+        "genero" : "Acción, Crimen, Thriller",
+        "director" : "Quentin Tarantino",
+        "sinopsis" : "Nos cuenta la historia de La Novia, una mujer berraca que, después de que su propio combo de asesinos la traiciona y la deja por muerta en su boda, se levanta de las cenizas como el Ave Fénix para buscar venganza. La pelada recorre el mundo, enfrentándose a sus antiguos compañeros uno por uno, con unas peleas que son una verraquera. Desde una batalla épica en Japón con la dura de O-Ren Ishii hasta un enfrentamiento con la letal Vernita Green en una casa de familia, La Novia demuestra que es una mujer que jamas se va a rendir.",
+        "reparto": "Uma Thurman, David Carradine, Lucy Liu",
+        "duracion": "142 minutos",
+        "categoria": {
+            "nombre": "Accion",
+            "id": "accion"
+        },
+        "precio": 120000
     }
 ]
