@@ -23,7 +23,7 @@ const mostrarPeliculaDescripcion = async () => {
     for (let i = 0; i < 3; i++) {
         descripcionContenido += `
         <figure>
-            <a class="miniaturas__peliculas" href="contenido/peliculas/descripcion/descripcion.html">
+            <a class="miniaturas__peliculas" href="#">
             <img class="miniaturas__peliculas__imagen"  src="../../${peliculas[i].imagen}" alt="${peliculas[i].titulo}">
             </a>
             <figcaption><span class="miniaturas__peliculas__nombre">${peliculas[i].titulo}</span></figcaption>

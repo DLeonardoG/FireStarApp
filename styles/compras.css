@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
 :root {
     --clr-main: #1c65ec;
     --clr-main-light: #6cd7f1;
@@ -16,13 +23,6 @@
 body {
     background-color: var(--clr-gray);
     color: var(--clr-red);
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
@@ -80,6 +80,10 @@ main {
     padding: .5em;
     padding-right: 1.5em;
     border-radius: 1em;
+}
+
+#nav--compras {
+    font-size: 3vw;
 }
 
 .carrito-producto-imagen {

@@ -17,34 +17,38 @@ const mostrarPeliculaDescripcion = async () => {
     const descripcion = document.getElementById("contenedor__descripcion");
     const peliculas = await cargarPeliculas();
     let descripcionContenido = ``;
-        descripcionContenido = `
+    let local = localStorage.getItem("descripcion");
+    for (let i = 0; i < peliculas.length; i++){
+        if(peliculas[i].id === local) {
+            descripcionContenido = `
         <header>
             <div class="video-wrapper">
                 <div class="video-container">
                     <video autoplay muted loop playsinline controls>
-                        <source src="../../../${peliculas[0].video}" type="video/mp4">
+                        <source src="../../../${peliculas[i].video}" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                     </video>
                 </div>
             </div>
         </header>
         <div class="descripcion">
-            <h2 class="descripcion__title">${peliculas[0].titulo}</h2>
+            <h2 class="descripcion__title">${peliculas[i].titulo}</h2>
             <ul class="lista descripcion__caracteristicas">
-                <li><span><b>Pais:</b> ${peliculas[0].pais}</span></li>
-                <li><span><b>Año:</b>${peliculas[0].año}</span></li>
-                <li><span><b>Género:</b> ${peliculas[0].genero}</span></li>
-                <li><span><b>Director:</b>${peliculas[0].director}</span></li>
+                <li><span><b>Pais:</b> ${peliculas[i].pais}</span></li>
+                <li><span><b>Año:</b>${peliculas[i].año}</span></li>
+                <li><span><b>Género:</b> ${peliculas[i].genero}</span></li>
+                <li><span><b>Director:</b>${peliculas[i].director}</span></li>
             </ul>
             <h2 class="descripcion__title descripcion__title--sinopsis">Sinopsis</h2>
-            <p class="descripcion__texto">${peliculas[0].sinopsis}</p>
+            <p class="descripcion__texto">${peliculas[i].sinopsis}</p>
             <h2 class="descripcion__title descripcion__title--reparto">Reparto</h2>
-            <span class="descripcion__caracteristicas"> ${peliculas[0].reparto}</span>
+            <span class="descripcion__caracteristicas"> ${peliculas[i].reparto}</span>
         </div>
             <div class="pago__total">
         <span>Total</span>
-        <span><b>$</b>${peliculas[0].precio}</span>
+        <span><b>$</b>${peliculas[i].precio}</span>
     </div>`;
-    descripcion.innerHTML = descripcionContenido;
+    descripcion.innerHTML = descripcionContenido;}
     }
+}
 mostrarPeliculaDescripcion()
