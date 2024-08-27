@@ -70,5 +70,41 @@
             "id": "accion"
         },
         "precio": 120000
+    },
+    {
+        "id": "Duro de matar",
+        "titulo": "Duro de matar",
+        "imagen": "imagenes/miniaturas/mini-duro-de-matar.svg",
+        "video" : "imagenes/descripciones/videos/video_duro_de_matar.mp4",
+        "país": "Estados Unidos",
+        "año" : "1998",
+        "genero" : "Acción, Thriller",
+        "director" : "John McTiernan",
+        "sinopsis" : "Nos presenta a John McClane, un policía neoyorquino de lo más bacano, que va a Los Ángeles para pasar Navidad con su familia y tratar de arreglar las cosas con su esposa. Pero las cosas se complican cuando un combo de terroristas, liderados por el elegante y malvado Hans Gruber, toma el edificio Nakatomi Plaza como rehén durante la fiesta de Navidad. McClane, con su chispa y su actitud de no dejarse joder, se infiltra en el edificio y empieza a enfrentarse a los terroristas uno por uno, utilizando todo lo que tiene a mano, desde su ingenio hasta las armas que logra quitarles a los malos. En medio de explosiones, tiroteos y momentos de pura tensión, McClane se convierte en un héroe inesperado, demostrando que es un tipo duro de matar.",
+        "reparto": "Bruce Willis como John McClane, Alan Rickman como Hans Gruber, Bonnie Bedelia como Holly Gennaro McClane",
+        "duracion": "100 minutos",
+        "categoria": {
+            "nombre": "Accion",
+            "id": "accion"
+        },
+        "precio": 150000
+    },
+    {
+        "id": "John Wick",
+        "titulo": "John Wick",
+        "imagen": "imagenes/miniaturas/mini-john-wick.svg",
+        "video" : "imagenes/descripciones/videos/video_john_wick.mp4",
+        "país": "Estados Unidos",
+        "año" : "1998",
+        "genero" : "Acción, Thriller",
+        "director" : "Chad Stahelski",
+        "sinopsis" : "'John Wick' Nos cuenta la historia de un man llamado John Wick, un exasesino a sueldo que estaba retirado tranquilo, viviendo su vida pacíficamente después de la muerte de su esposa. Todo cambia cuando unos pelaos, liderados por el hijo de un mafioso ruso, le roban su carro y matan a su perrito, el último regalo de su mujer. Ahí es cuando John se emberraca y decide volver al ruedo para cobrar venganza. El tipo se lanza en una misión implacable, desatando una lluvia de balas y peleas épicas, demostrando que es el más duro de los duros. En el camino, se enfrenta a montones de enemigos, utilizando todas sus habilidades letales y su determinación imparable para hacer justicia a su manera.",
+        "reparto": "Keanu Reeves como John Wick, Michael Nyqvist como Viggo Tarasov, Alfie Allen como Iosef Tarasov",
+        "duracion": "150 minutos",
+        "categoria": {
+            "nombre": "Accion",
+            "id": "accion"
+        },
+        "precio": 150000
     }
 ]
