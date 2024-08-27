@@ -12,52 +12,63 @@ const cargarPeliculas = async () => {
         console.error(error);
     }
 };
-
-const categoriasLista = document.getElementById("categoriasLista");
-
 const mostrarPeliculaCategoria = async () => {
+    const categoriasLista = document.getElementById("categoriasLista");
     const peliculas = await cargarPeliculas();
     let totalidad = ["accion", "comedia","animacion"]
     categoriasLista.innerHTML = "";
-    const li = document.createElement("li");
-    li.classList.add("categoriasListaLi");
     for (let i = 0; i < totalidad.length; i++){
-        li.innerHTML = ``
-        li.innerHTML = `
+        cac = "mostrarCategoria" + totalidad[i]
+        console.log(cac)
+        categoriasLista.innerHTML += `
+        <li>
         <div class="ver_todas">
             <h2>${totalidad[i]}</h2>
-            <a class="ver_todas__button" href="peliculas/ver_todos/peliculas_ver_todas_${totalidad[i]}.html">ver todas</a>
+            <a id="${totalidad[i]}" class="ver_todas__button" href="peliculas/ver_todos/peliculas_ver_todas.html">ver todas</a>
         </div>
-        <ul id="mostrarCategoria${totalidad[i]}" class="lista miniaturas">
-        </ul>`;
-        categoriasLista.appendChild(li);
+        <ul id= "${cac}"  class="lista miniaturas">
+        </ul>
+        </li>`;
+        let cate = document.getElementById(totalidad[i]);
+        console.log(cate)  
+        cate.addEventListener('click', guardarCate(totalidad[i]));
+        console.log(cate)
     };
-    for (let i = 0; i < totalidad.length; i++){
-        cac = totalidad[i]
-        console.log(getElementById("mostrarCategoriaaccion"))
-        const mostrarCategoria = getElementById("mostrarCategoria"+cac);
+    for (let y = 0; y < totalidad.length; y++){
+        cac = totalidad[y]
+        console.log(document.getElementById("mostrarCategoriaaccion"))
+        const mostrarCategoria = document.getElementById("mostrarCategoria"+cac);
         for (let j = 0; j < peliculas.length; j++){
-            if (peliculas[j].categoria.id === totalidad[i]){
+            if (peliculas[j].categoria.id === totalidad[y]){
                 const figura = document.createElement("li");
-                figura = ``
+                figura.innerHTML = ""
                 figura.innerHTML = `
                 <figure>
                 <a id="${peliculas[j].id}" class="miniaturas__peliculas" href="peliculas/descripcion/descripcion.html">
-                <img class="miniaturas__peliculas__imagen" src="${peliculas[j].imagen}" alt="${peliculas[j].titulo}">
+                <img class="miniaturas__peliculas__imagen" src="../../${peliculas[j].imagen}" alt="${peliculas[j].titulo}">
                 </a>
                 <figcaption><span class="miniaturas__peliculas__nombre">${peliculas[j].titulo}</span></figcaption>
                 </figure>
                 `;
-                peliculas[j].id.addEventListener('click', guardarDescripcion)
                 mostrarCategoria.appendChild(figura);
+                const peli = document.getElementById(peliculas[j].id);
+                console.log(peli)  
+                peli.addEventListener('click', guardarDescripcion);
+                console.log(mostrarCategoria)
             }
         }
     }
 }
+mostrarPeliculaCategoria()
 function guardarDescripcion() {
     console.log("Mostrar Pelicula Descripcion")
     let id = this.getAttribute('id')
     localStorage.setItem("descripcion",id)
+};
+function guardarCate(save) {
+    console.log("Mostrar Pelicula Descripcion")
+    let id2 = this.getAttribute('id')
+    console.log(id2)
+    localStorage.setItem("cate",save)
+    localStorage.getItem("cate")
 }
-
-mostrarPeliculaCategoria()
