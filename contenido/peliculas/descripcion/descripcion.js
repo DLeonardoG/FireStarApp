@@ -57,7 +57,7 @@ const mostrarPeliculaDescripcion = async () => {
     pago.innerHTML = ``
     pago.innerHTML = `
         <div class="pago__botones">
-            <a href="#" id="pagarBoton" class="pago__button comprar">Comprar</a>
+            <a href="../../carrito.html" id="pagarBoton" class="pago__button comprar">Comprar</a>
         </div>
         <div class="pago__botones">
             <a href="../ver_todos/peliculas_ver_todas.html" class="pago__button pago__button--transparente">No comprar</a>
@@ -82,10 +82,7 @@ const mostrarPeliculaDescripcion = async () => {
     peliId.addEventListener('click', () => {
         console.log(carrito)
         console.log(carrito.length)
-        carrito.push({ "id": "123",
-        "cantidad": 1})
         const propiedadBuscada = { "id": local };
-        
         const contieneObjeto = carrito.some(elemento =>
             elemento.id === propiedadBuscada.id
             );

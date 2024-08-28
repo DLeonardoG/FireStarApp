@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireStarApp</title>
+    <!-- <link rel="stylesheet" href="../styles/miniaturas.css"> -->
     <link rel="icon" href="../imagenes/iconos/icono-peliculas.svg">
-    <link rel="stylesheet" href="../styles/botones.css">
-    <link rel="stylesheet" href="../styles/barra-header.css">
-    <link rel="stylesheet" href="../styles/miniaturas.css">
-    <link rel="stylesheet" href="../styles/barra-footer.css">
-    <link rel="stylesheet" href="../styles/carrito.css">
-    <link rel="stylesheet" href="../styles/animaciones.css">
+    <!-- <link rel="stylesheet" href="../styles/peliculas.css"> -->
+    <!-- <link rel="stylesheet" href="../styles/botones.css"> -->
+    <!-- <link rel="stylesheet" href="../styles/carrito.css">
+        <link rel="stylesheet" href="../styles/animaciones.css"> -->
+        <link rel="stylesheet" href="../styles/compras.css">
+        <link rel="stylesheet" href="../styles/barra-header.css">
+        <link rel="stylesheet" href="../styles/barra-footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <header>
@@ -51,93 +55,32 @@
             </ul>
         </nav>
     </header>
-    <aside class="celular">
-        <input type="checkbox" id="modal-boton">
-        <div class="modal-envoltura">
-            <div class="modal">
-                <a class="boton-salir close-btn" href="https://www.google.com/">Salir</a>
-                <label for="modal-boton" class="close-btn">Aceptar</label>
-                <div class="texto_typewriter">
-                    <div class="texto_typewriter__contenedor">
-                        <h2 class="texto_typewriter__texto">Hola...</h2>
+    <div class="contenedor__conetenedor">
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+                <div id="carrito-productos" class="carrito-productos disabled"></div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
-                <div>
-                    <p>La pagina esta principalmente hecha para celular, por ende si desea tener una mejor experiencia, le recomendamos que cambie al movil</p>
-                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
             </div>
-        </div>
-    </aside> 
-    <main>
-        <div class="compras">
-            <ul class="lista compras__lista">
-                <li>
-                    <div class="compra__item">
-                        <div class="compra__item__imagen">
-                            <a href="peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
-                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-wall-street.svg" alt="sdsdsd"></a>
-                        </div>
-                        <div class="compra__item__descripcion">
-                            <h3 class="compra__item--title">Lobo de wall street</h3>
-                            <p class="compra__item--precio"><b>$</b>100.000</p>
-                            <p class="compra__item--duracion">126 minutos</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="compra__item">
-                        <div class="compra__item__imagen">
-                            <a href="peliculas/descripcion/kill_bill.html">
-                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-kill-bill.svg" alt="Kill bill"></a>
-                        </div>
-                        <div class="compra__item__descripcion">
-                            <h3 class="compra__item--title">Kill bill</h3>
-                            <p class="compra__item--precio"><b>$</b>150.000</p>
-                            <p class="compra__item--duracion">111 minutos</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="compra__item">
-                        <div class="compra__item__imagen">
-                            <a href="peliculas/descripcion/spiderman_across.html">
-                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-spiderman-across.svg" alt="spiderman_across"></a>
-                        </div>
-                        <div class="compra__item__descripcion">
-                            <h3 class="compra__item--title">Spider-Man: Across the Spider-Verse</h3>
-                            <p class="compra__item--precio"><b>$</b>120.000</p>
-                            <p class="compra__item--duracion">160 minutos</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="compra__item">
-                        <div class="compra__item__imagen">
-                            <a href="peliculas/descripcion/john_wick.html">
-                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-john-wick.svg" alt="john_wick"></a>
-                        </div>
-                        <div class="compra__item__descripcion">
-                            <h3 class="compra__item--title">John Wick</h3>
-                            <p class="compra__item--precio"><b>$</b>160.000</p>
-                            <p class="compra__item--duracion">101 minutos</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="pago__total">
-                <span>Total</span>
-                <span><b>$</b>430.000</span>
-            </div>
-            <div class="pago">
-                <div class="pago__botones">
-                    <a href="#" class="pago__button">Proceder al pago</a>
-                </div>
-                <div class="pago__botones">
-                    <a href="peliculas_categorias.html" class="pago__button pago__button--transparente">Seguir comprando</a>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
+    
     <footer>
         <nav>
             <ul class="footer__nav lista">
@@ -146,7 +89,7 @@
                 </li>
                 <li>
                     <div class="footer__nav__title">
-                        <h2 class="footer__nav__title nav__span--compras">Compras</h2>
+                        <h2 id="nav--compras" class="footer__nav__title nav__span--compras">Compras</h2>
                     </div>
                 </li>
                 <li>
@@ -155,5 +98,8 @@
             </ul>
         </nav>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>

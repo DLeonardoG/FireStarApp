@@ -1,5 +1,5 @@
-// let productosEnCarrito = localStorage.getItem("productos-en-carrito");
-// productosEnCarrito = JSON.parse(productosEnCarrito);
+let productosEnCarrito = JSON.parse(localStorage.getItem("carrito"));
+console.log(productosEnCarrito);
 
 const cargarPeliculas = async () => {
     try {
@@ -15,24 +15,6 @@ const cargarPeliculas = async () => {
         console.error(error);
     }
 };
-
-const mostrarPeliculaDescripcion = async () => {
-    const descripcion = document.getElementById("carrito-productos");
-    const peliculas = await cargarPeliculas();
-    let descripcionContenido = ``;
-    for (let i = 0; i < 3; i++) {
-        descripcionContenido += `
-        <figure>
-            <a class="miniaturas__peliculas" href="#">
-            <img class="miniaturas__peliculas__imagen"  src="../../${peliculas[i].imagen}" alt="${peliculas[i].titulo}">
-            </a>
-            <figcaption><span class="miniaturas__peliculas__nombre">${peliculas[i].titulo}</span></figcaption>
-        </figure>`;
-    }
-    descripcion.innerHTML = descripcionContenido;
-    };
-// mostrarPeliculaDescripcion()
-
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
@@ -42,47 +24,48 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
-
-function cargarProductosCarrito() {
+async function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
-
+        const peliculas = await cargarPeliculas()
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
         contenedorCarritoComprado.classList.add("disabled");
-    
+        let totalCalculado = 0;
         contenedorCarritoProductos.innerHTML = "";
-    
-        productosEnCarrito.forEach(producto => {
-    
-            const div = document.createElement("div");
-            div.classList.add("carrito-producto");
-            div.innerHTML = `
-                <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-                <div class="carrito-producto-titulo">
-                    <small>Título</small>
-                    <h3>${producto.titulo}</h3>
-                </div>
-                <div class="carrito-producto-cantidad">
-                    <small>Cantidad</small>
-                    <p>${producto.cantidad}</p>
-                </div>
-                <div class="carrito-producto-precio">
-                    <small>Precio</small>
-                    <p>$${producto.precio}</p>
-                </div>
-                <div class="carrito-producto-subtotal">
-                    <small>Subtotal</small>
-                    <p>$${producto.precio * producto.cantidad}</p>
-                </div>
-                <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
-            `;
-    
-            contenedorCarritoProductos.append(div);
-        })
-    
+        productosEnCarrito.forEach(uni => {
+            let id = uni.id;
+            peliculas.forEach(el => {
+                if (el.id === id) {
+                    const div = document.createElement("div");
+                    div.classList.add("carrito-producto");
+                    div.innerHTML = `
+                        <img class="carrito-producto-imagen" src="../${el.imagen}" alt="${el.titulo}">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>${el.titulo}</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>${uni.cantidad}</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$${el.precio}</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$${el.precio * uni.cantidad}</p>
+                        <button class="carrito-producto-eliminar" id="${el.id}"><i class="bi bi-trash-fill"></i></button>`;
+                        contenedorCarritoProductos.append(div);
+                        console.log("entro")
+                        totalCalculado += el.precio * uni.cantidad;
+    total.innerText = `$${totalCalculado}`
+                }
+            });
+            
+        })    
     actualizarBotonesEliminar();
-    actualizarTotal();
 	
     } else {
         contenedorCarritoVacio.classList.remove("disabled");
@@ -129,9 +112,7 @@ function eliminarDelCarrito(e) {
     
     productosEnCarrito.splice(index, 1);
     cargarProductosCarrito();
-
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-
+    localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);
@@ -148,24 +129,17 @@ function vaciarCarrito() {
     }).then((result) => {
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;
-            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+            localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
             cargarProductosCarrito();
         }
       })
-}
-
-
-function actualizarTotal() {
-    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
-    total.innerText = `$${totalCalculado}`;
 }
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
 
     productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    
+    localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");

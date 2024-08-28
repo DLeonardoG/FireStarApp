@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireStarApp</title>
+    <link rel="icon" href="../imagenes/iconos/icono-peliculas.svg">
+    <link rel="stylesheet" href="../styles/botones.css">
+    <link rel="stylesheet" href="../styles/barra-header.css">
+    <link rel="stylesheet" href="../styles/miniaturas.css">
+    <link rel="stylesheet" href="../styles/barra-footer.css">
+    <link rel="stylesheet" href="../styles/carrito.css">
+    <link rel="stylesheet" href="../styles/animaciones.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="lista header__nav">
+                <li>
+                    <form class="nav__form" action="../index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes\iconos\icono-inicio.png" alt="inicio">
+                            <span class="nav__span nav__span--inicio">Inicio</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="peliculas_categorias.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes/iconos/icono-peliculas.svg" alt="Peliculas">
+                            <span class="nav__span nav__span--inicio">Peliculas</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="#">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="../imagenes/iconos/icono-compras-azul.svg" alt="Compras">
+                            <span class="nav__span nav__span--azul">Compras</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="perfil.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras icono__perfil" src="../imagenes\miniaturas\juankis.jpeg" alt="Perfil">
+                            <span class="nav__span nav__span--compras">Perfil</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="celular">
+        <input type="checkbox" id="modal-boton">
+        <div class="modal-envoltura">
+            <div class="modal">
+                <a class="boton-salir close-btn" href="https://www.google.com/">Salir</a>
+                <label for="modal-boton" class="close-btn">Aceptar</label>
+                <div class="texto_typewriter">
+                    <div class="texto_typewriter__contenedor">
+                        <h2 class="texto_typewriter__texto">Hola...</h2>
+                    </div>
+                </div>
+                <div>
+                    <p>La pagina esta principalmente hecha para celular, por ende si desea tener una mejor experiencia, le recomendamos que cambie al movil</p>
+                </div>
+            </div>
+        </div>
+    </aside> 
+    <main>
+        <div class="compras">
+            <ul class="lista compras__lista">
+                <li>
+                    <div class="compra__item">
+                        <div class="compra__item__imagen">
+                            <a href="peliculas/descripcion/descripcion_el-lobo-de-wall-street.html">
+                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-wall-street.svg" alt="sdsdsd"></a>
+                        </div>
+                        <div class="compra__item__descripcion">
+                            <h3 class="compra__item--title">Lobo de wall street</h3>
+                            <p class="compra__item--precio"><b>$</b>100.000</p>
+                            <p class="compra__item--duracion">126 minutos</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="compra__item">
+                        <div class="compra__item__imagen">
+                            <a href="peliculas/descripcion/kill_bill.html">
+                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-kill-bill.svg" alt="Kill bill"></a>
+                        </div>
+                        <div class="compra__item__descripcion">
+                            <h3 class="compra__item--title">Kill bill</h3>
+                            <p class="compra__item--precio"><b>$</b>150.000</p>
+                            <p class="compra__item--duracion">111 minutos</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="compra__item">
+                        <div class="compra__item__imagen">
+                            <a href="peliculas/descripcion/spiderman_across.html">
+                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-spiderman-across.svg" alt="spiderman_across"></a>
+                        </div>
+                        <div class="compra__item__descripcion">
+                            <h3 class="compra__item--title">Spider-Man: Across the Spider-Verse</h3>
+                            <p class="compra__item--precio"><b>$</b>120.000</p>
+                            <p class="compra__item--duracion">160 minutos</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="compra__item">
+                        <div class="compra__item__imagen">
+                            <a href="peliculas/descripcion/john_wick.html">
+                            <img class="compra__item__imagen--pelicula" src="../imagenes\miniaturas\mini-john-wick.svg" alt="john_wick"></a>
+                        </div>
+                        <div class="compra__item__descripcion">
+                            <h3 class="compra__item--title">John Wick</h3>
+                            <p class="compra__item--precio"><b>$</b>160.000</p>
+                            <p class="compra__item--duracion">101 minutos</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="pago__total">
+                <span>Total</span>
+                <span><b>$</b>430.000</span>
+            </div>
+            <div class="pago">
+                <div class="pago__botones">
+                    <a href="#" class="pago__button">Proceder al pago</a>
+                </div>
+                <div class="pago__botones">
+                    <a href="peliculas_categorias.html" class="pago__button pago__button--transparente">Seguir comprando</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer__nav lista">
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-compras.png" alt="icono Peliculas"></a>
+                </li>
+                <li>
+                    <div class="footer__nav__title">
+                        <h2 class="footer__nav__title nav__span--compras">Compras</h2>
+                    </div>
+                </li>
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
