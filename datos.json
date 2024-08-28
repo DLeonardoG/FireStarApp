@@ -61,7 +61,7 @@
         "titulo": "Kill Bill",
         "imagen": "imagenes/miniaturas/mini-kill-bill.svg",
         "video" : "imagenes/descripciones/videos/video_kill_bill.mp4",
-        "país": "Estados Unidos",
+        "pais": "Estados Unidos",
         "año" : "2003",
         "genero" : "Acción, Crimen, Thriller",
         "director" : "Quentin Tarantino",
@@ -80,7 +80,7 @@
         "titulo": "Duro de matar",
         "imagen": "imagenes/miniaturas/mini-duro-de-matar.svg",
         "video" : "imagenes/descripciones/videos/video_duro_de_matar.mp4",
-        "país": "Estados Unidos",
+        "pais": "Estados Unidos",
         "año" : "1998",
         "genero" : "Acción, Thriller",
         "director" : "John McTiernan",
@@ -99,7 +99,7 @@
         "titulo": "John Wick",
         "imagen": "imagenes/miniaturas/mini-john-wick.svg",
         "video" : "imagenes/descripciones/videos/video_john_wick.mp4",
-        "país": "Estados Unidos",
+        "pais": "Estados Unidos",
         "año" : "1998",
         "genero" : "Acción, Thriller",
         "director" : "Chad Stahelski",
@@ -118,7 +118,7 @@
         "titulo": "Gru mi villano favorito",
         "imagen": "imagenes/miniaturas/mini-gru-mi-villano.svg",
         "video" : "imagenes/descripciones/videos/video_gru_mi_villano_favorito.mp4",
-        "país": "Estados Unidos",
+        "pais": "Estados Unidos",
         "año" : "2010",
         "genero" : "Animación, Comedia, Familia",
         "director" : "Pierre Coffin",
@@ -130,6 +130,44 @@
             "id": "animacion"
         },
         "precio": 80000,
+        "cantidad" : 0
+    },
+    {
+        "id": "Jefe en pañales",
+        "titulo": "Jefe en pañales",
+        "imagen": "imagenes/miniaturas/mini-jefe-en-pañales.svg",
+        "video" : "imagenes/descripciones/videos/video_jefe_en_pañales.mp4",
+        "pais": "Estados Unidos",
+        "año" : "2017",
+        "genero" : "Animación, Comedia, Familia",
+        "director" : "Tom McGrath",
+        "sinopsis" : "Es una película divertida que cuenta la historia de Tim, un niño que tiene la vida perfecta con sus padres amorosos. Pero todo cambia cuando llega un bebé inusual a su casa: un bebé vestido con traje y corbata que habla como un adulto y tiene planes secretos. Resulta que este bebé, conocido como Jefe en Pañales, en realidad es un agente encubierto de Baby Corp, en una misión para descubrir un malvado plan de la empresa Puppy Co. Tim y Jefe en Pañales se ven obligados a unir fuerzas para detener los planes malévolos y aprender a convivir como hermanos. Con una mezcla de comedia y aventura, la película nos muestra que incluso los bebés más inesperados pueden cambiar nuestras vidas para mejor.",
+        "reparto": "Alec Baldwin como Jefe en Pañales / Theodore Lindsey Templeton, Steve Buscemi como Francis E. Francis, Jimmy Kimmel como Ted Templeton (adulto).",
+        "duracion": "120 minutos",
+        "categoria": {
+            "nombre": "Animacion",
+            "id": "animacion"
+        },
+        "precio": 70000,
+        "cantidad" : 0
+    },
+    {
+        "id": "Spider-Man: Across the Spider-Verse",
+        "titulo": "Spider-Man: Across the Spider-Verse",
+        "imagen": "imagenes/miniaturas/mini-spiderman-across.svg",
+        "video" : "imagenes/descripciones/videos/video_spiderman_across.mp4",
+        "pais": "Estados Unidos",
+        "año" : "2023",
+        "genero" : "Animación, Acción, Aventura",
+        "director" : "Joaquim Dos Santos",
+        "sinopsis" : "Es la secuela esperada de la película animada Spider-Man: Into the Spider-Verse. En esta nueva entrega, Miles Morales, el pana que se convirtió en Spider-Man, sigue explorando el multiverso y se topa con nuevas versiones de Spider-Man de otros universos. La historia promete una aventura llena de acción, humor y encuentros sorprendentes entre los diferentes Spider-Men y Spider-Women. Miles tendrá que enfrentar desafíos épicos mientras lucha para proteger su ciudad y a quienes ama, demostrando que ser un héroe no es solo sobre tener poderes, sino también sobre valentía y sacrificio.",
+        "reparto": "Shameik Moore, Hailee Steinfeld, Jake Johnson",
+        "duracion": "120 minutos",
+        "categoria": {
+            "nombre": "Animacion",
+            "id": "animacion"
+        },
+        "precio": 90000,
         "cantidad" : 0
     }
 ]

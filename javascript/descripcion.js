@@ -1,7 +1,7 @@
 let carrito;
 const cargarPeliculas = async () => {
     try {
-        const respuesta = await fetch("../../../datos.json"); 
+        const respuesta = await fetch("../datos.json"); 
         if (respuesta.status === 200) {
             const datos = await respuesta.json();
             console.log(datos)
@@ -13,7 +13,6 @@ const cargarPeliculas = async () => {
         console.error(error);
     }
 };
-
 var local = localStorage.getItem("descripcion");
 const mostrarPeliculaDescripcion = async () => {
     const descripcion = document.getElementById("contenedor__descripcion");
@@ -26,7 +25,7 @@ const mostrarPeliculaDescripcion = async () => {
             <div class="video-wrapper">
                 <div class="video-container">
                     <video autoplay muted loop playsinline controls>
-                        <source src="../../../${peliculas[i].video}" type="video/mp4">
+                        <source src="../${peliculas[i].video}" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                     </video>
                 </div>
@@ -57,22 +56,16 @@ const mostrarPeliculaDescripcion = async () => {
     pago.innerHTML = ``
     pago.innerHTML = `
         <div class="pago__botones">
-            <a href="../../carrito.html" id="pagarBoton" class="pago__button comprar">Comprar</a>
+            <a href="carrito.html" id="pagarBoton" class="pago__button comprar">Comprar</a>
         </div>
         <div class="pago__botones">
-            <a href="../ver_todos/peliculas_ver_todas.html" class="pago__button pago__button--transparente">No comprar</a>
+            <a href="ver_todos/peliculas_ver_todas.html" class="pago__button pago__button--transparente">No comprar</a>
         </div>
         `;
     peliId = document.getElementById("pagarBoton");
     console.log(peliId);
     if(localStorage.getItem("carrito") === null || localStorage.getItem("carrito") == []) {
         carrito = []
-        carrito.push({
-            "id": "123",
-            "cantidad": 1
-        })
-        console.log(carrito)
-        console.log("sdede")
     } else {
         carrito = JSON.parse(localStorage.getItem("carrito"))
         console.log(carrito)
@@ -86,10 +79,6 @@ const mostrarPeliculaDescripcion = async () => {
         const contieneObjeto = carrito.some(elemento =>
             elemento.id === propiedadBuscada.id
             );
-            console.log(contieneObjeto)
-            console.log(contieneObjeto);
-        console.log("aquidede");
-        console.log("sw")
         if (carrito.length === 0) {
             carrito.push({
                 "id": local,
@@ -100,8 +89,6 @@ const mostrarPeliculaDescripcion = async () => {
             carrito.forEach( (ele) => {
                 if (ele.id === local) {
                     ele.cantidad += 1;
-                    console.log(ele.cantidad)
-                    console.log("pase")
                 }
             })
         } else {
@@ -116,5 +103,24 @@ const mostrarPeliculaDescripcion = async () => {
         console.log(carrito)
         console.log(localStorage.getItem("carrito"))
     });
+    const footer = document.querySelector("footer")
+    console.log(footer);
+    footer.innerHTML = `
+        <nav>
+        <ul class="footer__nav lista footer__descripcion">
+            <li>
+                <a class="footer__nav__button" href="peliculas_categorias.html"><img class="footer__nav__img footer__nav__img--imagen" src="../../../imagenes/iconos/icono-volver.svg" alt="icono Peliculas"></a>
+            </li>
+            <li>
+                <div class="footer__nav__title">
+                    <h2 class="footer__nav__title nav__span--compras">pelicula</h2>
+                </div>
+            </li>
+            <li>
+                <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../../../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
+            </li>
+        </ul>
+    </nav>
+    `;
     }
 mostrarPeliculaDescripcion()

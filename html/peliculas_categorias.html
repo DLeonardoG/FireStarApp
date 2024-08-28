@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireStarApp</title>
+    <link rel="icon" href="../imagenes/iconos/icono-peliculas.svg">
+    <link rel="stylesheet" href="../styles/barra-header.css">
+    <link rel="stylesheet" href="../styles/miniaturas.css">
+    <link rel="stylesheet" href="../styles/barra-footer.css">
+    <link rel="stylesheet" href="../styles/animaciones.css">
+</head>
+<body>
+    <header></header>
+    <aside class="celular">
+        <input type="checkbox" id="modal-boton">
+        <div class="modal-envoltura">
+            <div class="modal">
+                <a class="boton-salir close-btn" href="https://www.google.com/">Salir</a>
+                <label for="modal-boton" class="close-btn">Aceptar</label>
+                <div class="texto_typewriter">
+                    <div class="texto_typewriter__contenedor">
+                        <h2 class="texto_typewriter__texto">Hola...</h2>
+                    </div>
+                </div>
+                <div>
+                    <p>La pagina esta principalmente hecha para celular, por ende si desea tener una mejor experiencia, le recomendamos que cambie al movil</p>
+                </div>
+            </div>
+        </div>
+    </aside>  
+    <main class="main__padding">
+        <section>
+            <ul id="categoriasLista" class="lista"></ul>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="../javascript/categorias.js"></script>
+</html>
