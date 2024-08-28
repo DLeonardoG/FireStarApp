@@ -1,3 +1,4 @@
+let carrito;
 const cargarPeliculas = async () => {
     try {
         const respuesta = await fetch("../../../datos.json"); 
@@ -13,11 +14,11 @@ const cargarPeliculas = async () => {
     }
 };
 
+var local = localStorage.getItem("descripcion");
 const mostrarPeliculaDescripcion = async () => {
     const descripcion = document.getElementById("contenedor__descripcion");
     const peliculas = await cargarPeliculas();
     let descripcionContenido = ``;
-    let local = localStorage.getItem("descripcion");
     for (let i = 0; i < peliculas.length; i++){
         if(peliculas[i].id === local) {
             descripcionContenido = `
@@ -56,34 +57,67 @@ const mostrarPeliculaDescripcion = async () => {
     pago.innerHTML = ``
     pago.innerHTML = `
         <div class="pago__botones">
-            <a href="#" id="${idPeli}" class="pago__button comprar">Comprar</a>
+            <a href="#" id="pagarBoton" class="pago__button comprar">Comprar</a>
         </div>
         <div class="pago__botones">
             <a href="../ver_todos/peliculas_ver_todas.html" class="pago__button pago__button--transparente">No comprar</a>
         </div>
         `;
-    peliId = document.getElementById(idPeli)
-    console.log(peliId)
-    let carrito;
-
-    peliId.addEventListener('click', () => {
+    peliId = document.getElementById("pagarBoton");
+    console.log(peliId);
+    if(localStorage.getItem("carrito") === null || localStorage.getItem("carrito") == []) {
+        carrito = []
+        carrito.push({
+            "id": "123",
+            "cantidad": 1
+        })
+        console.log(carrito)
+        console.log("sdede")
+    } else {
         carrito = JSON.parse(localStorage.getItem("carrito"))
         console.log(carrito)
-        carrito.forEach( (item) => {
-            if(item.id === idPeli) {
-                item.cantidad += 1
-            } else {
-                carrito.push({
-                    id: idPeli,
-                    cantidad: 1
-                })
-            }
-        })
-        carrito = []
+    }
+    
+    
+    peliId.addEventListener('click', () => {
+        console.log(carrito)
+        console.log(carrito.length)
+        carrito.push({ "id": "123",
+        "cantidad": 1})
+        const propiedadBuscada = { "id": local };
+        
+        const contieneObjeto = carrito.some(elemento =>
+            elemento.id === propiedadBuscada.id
+            );
+            console.log(contieneObjeto)
+            console.log(contieneObjeto);
+        console.log("aquidede");
+        console.log("sw")
+        if (carrito.length === 0) {
+            carrito.push({
+                "id": local,
+                "cantidad": 1
+            })
+            console.log(carrito)
+        } else if (contieneObjeto === true) {
+            carrito.forEach( (ele) => {
+                if (ele.id === local) {
+                    ele.cantidad += 1;
+                    console.log(ele.cantidad)
+                    console.log("pase")
+                }
+            })
+        } else {
+            carrito.push({
+                "id": local,
+                "cantidad": 1
+            })
+            console.log(carrito)
+        }
         localStorage.setItem("carrito", JSON.stringify(carrito))
         console.log(idPeli)
         console.log(carrito)
-        localStorage.getItem("carrito")
+        console.log(localStorage.getItem("carrito"))
     });
     }
 mostrarPeliculaDescripcion()
