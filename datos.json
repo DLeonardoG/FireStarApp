@@ -15,7 +15,8 @@
             "nombre": "Comedia",
             "id": "comedia"
         },
-        "precio": 100000
+        "precio": 100000,
+        "cantidad" : 0
     },
     {
         "id": "El justiciero",
@@ -33,7 +34,8 @@
             "nombre": "Accion",
             "id": "accion"
         },
-        "precio": 150000
+        "precio": 150000,
+        "cantidad" : 0
     },
     {
         "id": "Megamente",
@@ -51,7 +53,8 @@
             "nombre": "Animacion",
             "id": "animacion"
         },
-        "precio": 90000
+        "precio": 90000,
+        "cantidad" : 0
     },
     {
         "id": "Kill Bill",
@@ -69,7 +72,8 @@
             "nombre": "Accion",
             "id": "accion"
         },
-        "precio": 120000
+        "precio": 120000,
+        "cantidad" : 0
     },
     {
         "id": "Duro de matar",
@@ -87,7 +91,8 @@
             "nombre": "Accion",
             "id": "accion"
         },
-        "precio": 150000
+        "precio": 150000,
+        "cantidad" : 0
     },
     {
         "id": "John Wick",
@@ -105,6 +110,26 @@
             "nombre": "Accion",
             "id": "accion"
         },
-        "precio": 150000
+        "precio": 150000,
+        "cantidad" : 0
+    },
+    {
+        "id": "Gru mi villano favorito",
+        "titulo": "Gru mi villano favorito",
+        "imagen": "imagenes/miniaturas/mini-gru-mi-villano.svg",
+        "video" : "imagenes/descripciones/videos/video_gru_mi_villano_favorito.mp4",
+        "país": "Estados Unidos",
+        "año" : "2010",
+        "genero" : "Animación, Comedia, Familia",
+        "director" : "Pierre Coffin",
+        "sinopsis" : "Es la historia de Gru, un man que se cree el más duro de los villanos y tiene un ejército de minions que son una locura. Este man tiene planes maestros para robar la Luna, pero su vida cambia cuando tres peladitos adorables se meten en su camino. Gru se ve obligado a enfrentar sus sentimientos y a aprender a ser un papá cuando adopta a Margo, Edith y Agnes como parte de su plan para conquistar el mundo. Entre las travesuras de los minions y los intentos de Vector por robarle su chamba, Gru descubre que ser un villano no es tan fácil como parece y que tener una familia puede ser más importante que robar la Luna.",
+        "reparto": "Steve Carell como Gru, Jason Segel como Vector, Russell Brand como Dr. Nefario",
+        "duracion": "150 minutos",
+        "categoria": {
+            "nombre": "Animacion",
+            "id": "animacion"
+        },
+        "precio": 80000,
+        "cantidad" : 0
     }
 ]

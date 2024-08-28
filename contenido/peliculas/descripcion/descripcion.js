@@ -48,7 +48,42 @@ const mostrarPeliculaDescripcion = async () => {
         <span>Total</span>
         <span><b>$</b>${peliculas[i].precio}</span>
     </div>`;
-    descripcion.innerHTML = descripcionContenido;}
-    }
+    descripcion.innerHTML = descripcionContenido;
+    var idPeli = peliculas[i].id 
 }
+}
+    const pago = document.getElementById("pago")
+    pago.innerHTML = ``
+    pago.innerHTML = `
+        <div class="pago__botones">
+            <a href="#" id="${idPeli}" class="pago__button comprar">Comprar</a>
+        </div>
+        <div class="pago__botones">
+            <a href="../ver_todos/peliculas_ver_todas.html" class="pago__button pago__button--transparente">No comprar</a>
+        </div>
+        `;
+    peliId = document.getElementById(idPeli)
+    console.log(peliId)
+    let carrito;
+
+    peliId.addEventListener('click', () => {
+        carrito = JSON.parse(localStorage.getItem("carrito"))
+        console.log(carrito)
+        carrito.forEach( (item) => {
+            if(item.id === idPeli) {
+                item.cantidad += 1
+            } else {
+                carrito.push({
+                    id: idPeli,
+                    cantidad: 1
+                })
+            }
+        })
+        carrito = []
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+        console.log(idPeli)
+        console.log(carrito)
+        localStorage.getItem("carrito")
+    });
+    }
 mostrarPeliculaDescripcion()

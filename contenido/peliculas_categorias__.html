@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireStarApp</title>
+    <link rel="icon" href="../imagenes\iconos/icono-peliculas.svg">
+    <link rel="stylesheet" href="../styles\barra-header.css">
+    <link rel="stylesheet" href="../styles/miniaturas.css">
+    <link rel="stylesheet" href="../styles\barra-footer.css">
+    <link rel="stylesheet" href="../styles\animaciones.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="lista header__nav">
+                <li>
+                    <form class="nav__form" action="../index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes\iconos\icono-inicio.png" alt="inicio">
+                            <span class="nav__span nav__span--inicio">Inicio</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="#">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes/iconos/icono-peliculas-azul.svg" alt="Peliculas">
+                            <span class="nav__span nav__span--azul">Peliculas</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="carrito.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="../imagenes\iconos\icono-compras.png" alt="Compras">
+                            <span class="nav__span nav__span--compras">Compras</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="perfil.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras icono__perfil" src="../imagenes\miniaturas\juankis.jpeg" alt="Perfil">
+                            <span class="nav__span nav__span--compras">Perfil</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="celular">
+        <input type="checkbox" id="modal-boton">
+        <div class="modal-envoltura">
+            <div class="modal">
+                <a class="boton-salir close-btn" href="https://www.google.com/">Salir</a>
+                <label for="modal-boton" class="close-btn">Aceptar</label>
+                <div class="texto_typewriter">
+                    <div class="texto_typewriter__contenedor">
+                        <h2 class="texto_typewriter__texto">Hola...</h2>
+                    </div>
+                </div>
+                <div>
+                    <p>La pagina esta principalmente hecha para celular, por ende si desea tener una mejor experiencia, le recomendamos que cambie al movil</p>
+                </div>
+            </div>
+        </div>
+    </aside>  
+    <main class="main__padding">
+        <section>
+            <ul class="lista">
+                <li>
+                    <div class="ver_todas">
+                        <h2 class="">accion</h2>
+                        <a class="ver_todas__button" href="peliculas/ver_todos/peliculas_ver_todas_accion.html">ver todas</a>
+                    </div>
+                    <ul class="lista miniaturas">
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/duro_de_matar.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-duro-de-matar.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">Duro de matar</span></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/kill_bill.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-kill-bill.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">Kill Bill</span></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/john_wick.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-john-wick.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">Jhon Wick</span></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/ver_todos/peliculas_ver_todas_accion.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/verMas.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre"></span></figcaption>
+                            </figure>
+                        </li>
+                        <!-- <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/el_justiciero.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-el-justiciero.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">El justiciero</span></figcaption>
+                            </figure>
+                        </li> -->
+                    </ul>
+                </li>
+                <li>
+                    <div class="ver_todas">
+                        <h2 class="">Animacion</h2>
+                        <a class="ver_todas__button" href="peliculas/ver_todos/peliculas_ver_todas_animacion.html">ver todas</a>
+                    </div>
+                    <ul class="lista miniaturas ">
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/jefe_en_pañales.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-jefe-en-pañales.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">Jefe en pañales</span></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/gru_mi_villano_favorito.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/mini-gru-mi-villano.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">Gru mi villano favorito</span></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/descripcion/spiderman_across.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes//miniaturas/mini-spiderman-across.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre">Spider-Man: Across the Spider-Verse</span></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                    <a class="miniaturas__peliculas" href="peliculas/ver_todos/peliculas_ver_todas_animacion.html">
+                                    <img class="miniaturas__peliculas__imagen"  src="../imagenes/miniaturas/verMas.svg" alt="pelicula 1">
+                                    </a>
+                                    <figcaption><span class="miniaturas__peliculas__nombre"></span></figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer__nav lista">
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-peliculas.svg" alt="icono Peliculas"></a>
+                </li>
+                <li>
+                    <div class="footer__nav__title">
+                        <h2 class="footer__nav__title nav__span--compras">categorias</h2>
+                    </div>
+                </li>
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

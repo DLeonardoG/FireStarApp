@@ -15,7 +15,9 @@ const cargarPeliculas = async () => {
 const mostrarPeliculaCategoria = async () => {
     const categoriasLista = document.getElementById("categoriasLista");
     const peliculas = await cargarPeliculas();
-    let totalidad = ["accion", "comedia","animacion"]
+    let totalidad = ["accion", "comedia","animacion"];
+    let categos = JSON.stringify(totalidad)
+    localStorage.setItem("categoriasLista",categos);
     categoriasLista.innerHTML = "";
     for (let i = 0; i < totalidad.length; i++){
         cac = "mostrarCategoria" + totalidad[i]
@@ -29,14 +31,17 @@ const mostrarPeliculaCategoria = async () => {
         <ul id= "${cac}"  class="lista miniaturas">
         </ul>
         </li>`;
-        let cate = document.getElementById(totalidad[i]);
-        console.log(cate)  
-        cate.addEventListener('click', guardarCate(totalidad[i]));
-        console.log(cate)
+
     };
+    cates = document.querySelectorAll(".ver_todas__button")
+    cates.forEach((uni) => {
+        uni.addEventListener('click', () => {
+            localStorage.setItem("cate", uni.id)
+            localStorage.getItem("cate")
+        });
+    })
     for (let y = 0; y < totalidad.length; y++){
         cac = totalidad[y]
-        console.log(document.getElementById("mostrarCategoriaaccion"))
         const mostrarCategoria = document.getElementById("mostrarCategoria"+cac);
         for (let j = 0; j < peliculas.length; j++){
             if (peliculas[j].categoria.id === totalidad[y]){
@@ -51,10 +56,8 @@ const mostrarPeliculaCategoria = async () => {
                 </figure>
                 `;
                 mostrarCategoria.appendChild(figura);
-                const peli = document.getElementById(peliculas[j].id);
-                console.log(peli)  
+                const peli = document.getElementById(peliculas[j].id); 
                 peli.addEventListener('click', guardarDescripcion);
-                console.log(mostrarCategoria)
             }
         }
     }
@@ -65,10 +68,3 @@ function guardarDescripcion() {
     let id = this.getAttribute('id')
     localStorage.setItem("descripcion",id)
 };
-function guardarCate(save) {
-    console.log("Mostrar Pelicula Descripcion")
-    let id2 = this.getAttribute('id')
-    console.log(id2)
-    localStorage.setItem("cate",save)
-    localStorage.getItem("cate")
-}
