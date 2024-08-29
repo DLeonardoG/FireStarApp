@@ -1,4 +1,3 @@
-    
 :root {
     font-size: 5vw;
 }
@@ -6,7 +5,6 @@
     display: none;
 }
 .header__nav {
-
     /* background-image: linear-gradient( #2E3034, #1E1D1D, #000000, #000000); */
     background-color: #000000;
     color: white;
@@ -14,9 +12,8 @@
     position: fixed;
     width: 100%;
     bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: 0;
     box-sizing: border-box;
     z-index: 2;
@@ -33,6 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .nav__button--perfil {
     margin: 0;

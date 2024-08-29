@@ -22,7 +22,7 @@
         "id": "El justiciero",
         "titulo": "El justiciero",
         "imagen": "imagenes/miniaturas/mini-el-justiciero.svg",
-        "video" : "imagenes/descripciones/videos/video_el_justiciero.mp4",
+        "video" : "https://www.youtube.com/embed/VjctHUEmutw",
         "pais": "Estados Unidos",
         "año" : "2014",
         "genero" : "Acción, Thriller, Crimen",
@@ -60,7 +60,7 @@
         "id": "Kill Bill",
         "titulo": "Kill Bill",
         "imagen": "imagenes/miniaturas/mini-kill-bill.svg",
-        "video" : "imagenes/descripciones/videos/video_kill_bill.mp4",
+        "video" : "https://www.youtube.com/embed/7kSuas6mRpk?si=iAOXWIH4R_xr_o8E&amp;start=65",
         "pais": "Estados Unidos",
         "año" : "2003",
         "genero" : "Acción, Crimen, Thriller",
@@ -136,7 +136,7 @@
         "id": "Jefe en pañales",
         "titulo": "Jefe en pañales",
         "imagen": "imagenes/miniaturas/mini-jefe-en-pañales.svg",
-        "video" : "imagenes/descripciones/videos/video_jefe_en_pañales.mp4",
+        "video" : "https://www.youtube.com/embed/SXpVk9uKL8I?si=5jtsshBYqiyJmZHC&amp;start=65",
         "pais": "Estados Unidos",
         "año" : "2017",
         "genero" : "Animación, Comedia, Familia",
@@ -169,5 +169,25 @@
         },
         "precio": 90000,
         "cantidad" : 0
+    },
+    {
+        "id": "Son como niños",
+        "titulo": "Son como niños",
+        "imagen": "https://image.tmdb.org/t/p/original/nV1WHEeDGayDmChqQQbHzSDlPrd.jpg",
+        "video": "https://www.youtube.com/embed/yMEDiKD7cyE?si=veYsTNYe5-PwKvc0&amp;start=65",
+        "pais": "Estados Unidos",
+        "año": "2010",
+        "genero": "Comedia",
+        "director": "Dennis Dugan",
+        "sinopsis": "Un grupo de amigos de la infancia se reúne después de muchos años para rendir homenaje a su antiguo entrenador de baloncesto. A lo largo del fin de semana, reviven viejos tiempos y enfrentan situaciones cómicas mientras aprenden a lidiar con los desafíos de la vida adulta. La película mezcla humor y nostalgia, mostrando cómo los amigos pueden ayudarte a superar cualquier obstáculo.",
+        "reparto": "Adam Sandler, Kevin James, Chris Rock, David Spade",
+        "duracion": "102 minutos",
+        "categoria": {
+            "nombre": "Animacion",
+            "id": "animacion"
+        },
+        "precio": 90000,
+        "cantidad": 0
     }
+    
 ]

@@ -66,77 +66,16 @@ body {
 }
 .miniaturas {
     display: grid;
-    grid-template-columns: 
-        repeat(
-            auto-fit,
-            minmax(120px, 1fr)
-        );
+    grid-template-columns: repeat(2, 1fr);
     gap: 2%;
     margin: 0 3%;
 }
-@media (max-width: 260px) {
-    .miniaturas {
-        display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(80px, 1fr)
-            );
-    }
-}
-@media (min-width: 398px) {
-    .miniaturas {
-        display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(150px, 1fr)
-            );
-    }
-}
-@media (min-width: 497px) {
-    .miniaturas {
-        display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(170px, 1fr)
-            );
-    }
-}
-@media (min-width: 497px) {
-    .miniaturas {
-        display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(170px, 1fr)
-            );
-    }
-}
-@media (min-width: 565px) {
-    .miniaturas {
-        display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(200px, 1fr)
-            );
-    }
-}
-@media (min-width: 657px) {
-    .miniaturas {
-        display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(270px, 1fr)
-            );
-    }
-}
 
 @media (min-width: 550px) and (max-width: 999px){
-    
+    .miniaturas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }   
 }
 @media (min-width: 1000px){
     body {
@@ -210,11 +149,7 @@ body {
     }
     .miniaturas {
         display: grid;
-        grid-template-columns: 
-            repeat(
-                auto-fit,
-                minmax(120px, 1fr)
-            );
+        grid-template-columns: repeat(4, 1fr);
         gap: 3%;
         margin: 0 3%;
     }

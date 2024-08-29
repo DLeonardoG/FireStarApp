@@ -22,27 +22,30 @@ const mostrarPeliculaDescripcion = async () => {
         if(peliculas[i].id === local) {
             descripcionContenido = `
         <header>
-            <div class="video-wrapper">
-                <div class="video-container">
-                    <video autoplay muted loop playsinline controls>
-                        <source src="../${peliculas[i].video}" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
-                </div>
-            </div>
+        <div class="video-wrapper">
+    <div class="video-container">
+        <iframe 
+            src="${peliculas[i].video}" 
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+        </div>
+    </div>
         </header>
         <div class="descripcion">
             <h2 class="descripcion__title">${peliculas[i].titulo}</h2>
+            <h2 class="descripcion__title descripcion__title--sinopsis">Sinopsis</h2>
+            <p class="descripcion__texto">${peliculas[i].sinopsis}</p>
+            <h2 class="descripcion__title descripcion__title--reparto">Reparto</h2>
+            <span class="descripcion__caracteristicas"> ${peliculas[i].reparto}</span>
+            <br>
             <ul class="lista descripcion__caracteristicas">
                 <li><span><b>Pais:</b> ${peliculas[i].pais}</span></li>
                 <li><span><b>Año:</b>${peliculas[i].año}</span></li>
                 <li><span><b>Género:</b> ${peliculas[i].genero}</span></li>
                 <li><span><b>Director:</b>${peliculas[i].director}</span></li>
             </ul>
-            <h2 class="descripcion__title descripcion__title--sinopsis">Sinopsis</h2>
-            <p class="descripcion__texto">${peliculas[i].sinopsis}</p>
-            <h2 class="descripcion__title descripcion__title--reparto">Reparto</h2>
-            <span class="descripcion__caracteristicas"> ${peliculas[i].reparto}</span>
         </div>
             <div class="pago__total">
         <span>Total</span>
