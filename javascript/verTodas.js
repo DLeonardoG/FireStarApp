@@ -85,25 +85,24 @@ const mostrarPeliculaCategoria = async () => {
     verTodas.innerHTML = ``
         peliculas.forEach( (uni) => {
         if (uni.categoria.id === cac){
-            verTodas.innerHTML += `
-            <li>
-            <figure>
-            <a id="${uni.id}" class="miniaturas__peliculas" href="descripcion.html">
-            <img class="miniaturas__peliculas__imagen" src="../${uni.imagen}" alt="${uni.titulo}">
-            </a>
-            <figcaption><span class="miniaturas__peliculas__nombre">${uni.titulo}</span></figcaption>
-            </figure>
-            </li>`;
-            const peli = document.querySelectorAll(".miniaturas__peliculas"); 
-            console.log(peli);
-            peli.forEach((uni) => {
-                uni.addEventListener('click', () => {
-                    localStorage.setItem("descripcion", uni.id)
-                    localStorage.getItem("descripcion")
-                });
-            })
+                verTodas.innerHTML += `
+                <li>
+                <figure>
+                <a id="${uni.id}" class="miniaturas__peliculas" href="descripcion.html">
+                <img class="miniaturas__peliculas__imagen" src="${uni.imagen}" alt="${uni.titulo}">
+                </a>
+                <figcaption><span class="miniaturas__peliculas__nombre">${uni.titulo}</span></figcaption>
+                </figure>
+                </li>`;
+                const peli = document.querySelectorAll(".miniaturas__peliculas"); 
+                console.log(peli);
+                peli.forEach((uni) => {
+                    uni.addEventListener('click', () => {
+                        localStorage.setItem("descripcion", uni.id)
+                        localStorage.getItem("descripcion")
+                    });
+                })
         }
-
         }
         )
     }

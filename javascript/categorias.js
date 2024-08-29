@@ -75,7 +75,7 @@ const hacerfooter = () => {
 const mostrarPeliculaCategoria = async () => {
     const categoriasLista = document.getElementById("categoriasLista");
     const peliculas = await cargarPeliculas();
-    let totalidad = ["accion", "comedia","animacion"];
+    let totalidad = ["accion", "comedia","animacion","terror"];
     let categos = JSON.stringify(totalidad)
     localStorage.setItem("categoriasLista",categos);
     categoriasLista.innerHTML = "";
@@ -103,21 +103,25 @@ const mostrarPeliculaCategoria = async () => {
     for (let y = 0; y < totalidad.length; y++){
         cac = totalidad[y]
         const mostrarCategoria = document.getElementById("mostrarCategoria"+cac);
+        let count = 1
         for (let j = 0; j < peliculas.length; j++){
             if (peliculas[j].categoria.id === totalidad[y]){
-                const figura = document.createElement("li");
-                figura.innerHTML = ""
-                figura.innerHTML = `
-                <figure>
-                <a id="${peliculas[j].id}" class="miniaturas__peliculas" href="descripcion.html">
-                <img class="miniaturas__peliculas__imagen" src="../${peliculas[j].imagen}" alt="${peliculas[j].titulo}">
-                </a>
-                <figcaption><span class="miniaturas__peliculas__nombre">${peliculas[j].titulo}</span></figcaption>
-                </figure>
-                `;
-                mostrarCategoria.appendChild(figura);
-                const peli = document.getElementById(peliculas[j].id); 
-                peli.addEventListener('click', guardarDescripcion);
+                count += 1;
+                if (count != 4) { 
+                    const figura = document.createElement("li");
+                    figura.innerHTML = ""
+                    figura.innerHTML = `
+                    <figure>
+                    <a id="${peliculas[j].id}" class="miniaturas__peliculas" href="descripcion.html">
+                    <img class="miniaturas__peliculas__imagen" src="${peliculas[j].imagen}" alt="${peliculas[j].titulo}">
+                    </a>
+                    <figcaption><span class="miniaturas__peliculas__nombre">${peliculas[j].titulo}</span></figcaption>
+                    </figure>
+                    `;
+                    mostrarCategoria.appendChild(figura);
+                    const peli = document.getElementById(peliculas[j].id); 
+                    peli.addEventListener('click', guardarDescripcion);
+                }
             }
         }
     }

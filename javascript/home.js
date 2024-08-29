@@ -75,10 +75,10 @@ const mostrarPeliculaDescripcion = async () => {
     const descripcion = document.getElementById("miniatures__home");
     const peliculas = await cargarPeliculas();
     let descripcionContenido = ``;
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         descripcionContenido += `
         <figure>
-            <a id="${peliculas[i].id}" class="miniaturas__peliculas abrir" href="contenido/peliculas/descripcion/descripcion.html">
+            <a id="${peliculas[i].id}" class="miniaturas__peliculas abrir" href="html/descripcion.html">
             <img class="miniaturas__peliculas__imagen"  src="${peliculas[i].imagen}" alt="${peliculas[i].titulo}">
             </a>
             <figcaption><span class="miniaturas__peliculas__nombre">${peliculas[i].titulo}</span></figcaption>

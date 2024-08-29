@@ -2,8 +2,8 @@
     {
         "id": "El lobo de wall street",
         "titulo": "El lobo de wall street",
-        "imagen": "imagenes/miniaturas/mini-wall-street.svg",
-        "video" : "imagenes/descripciones/videos/video_lobo-de-wall-street.mp4",
+        "imagen": "https://es.web.img3.acsta.net/pictures/210/615/21061596_20131129121836144.jpg",
+        "video" : "https://www.youtube.com/embed/DEMZSa0esCU?si=s-nwsnXRDHGxLCbL",
         "pais": "Estados Unidos",
         "año" : "2013",
         "genero" : "Comedia",
@@ -21,7 +21,7 @@
     {
         "id": "El justiciero",
         "titulo": "El justiciero",
-        "imagen": "imagenes/miniaturas/mini-el-justiciero.svg",
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/3b31f0695b5bb0d3f79433a4e788693cf23ff3dcac2d1a16d1f8e7fe2e75f1e1.jpg",
         "video" : "https://www.youtube.com/embed/VjctHUEmutw",
         "pais": "Estados Unidos",
         "año" : "2014",
@@ -40,8 +40,8 @@
     {
         "id": "Megamente",
         "titulo": "Megamente",
-        "imagen": "imagenes/miniaturas/mini-megamente.svg",
-        "video" : "imagenes/descripciones/videos/video_megamente.mp4",
+        "imagen": "https://es.web.img2.acsta.net/medias/nmedia/18/78/24/95/19534186.jpg",
+        "video" : "https://www.youtube.com/embed/6CJUQr4Vs40?si=NJgSTo80o1Lg07Hn",
         "pais": "Estados Unidos",
         "año" : "2010",
         "genero" : "Animación, Acción, Comedia",
@@ -59,7 +59,7 @@
     {
         "id": "Kill Bill",
         "titulo": "Kill Bill",
-        "imagen": "imagenes/miniaturas/mini-kill-bill.svg",
+        "imagen": "https://pics.filmaffinity.com/Kill_Bill_Volumen_1-310054253-large.jpg",
         "video" : "https://www.youtube.com/embed/7kSuas6mRpk?si=iAOXWIH4R_xr_o8E&amp;start=65",
         "pais": "Estados Unidos",
         "año" : "2003",
@@ -78,8 +78,8 @@
     {
         "id": "Duro de matar",
         "titulo": "Duro de matar",
-        "imagen": "imagenes/miniaturas/mini-duro-de-matar.svg",
-        "video" : "imagenes/descripciones/videos/video_duro_de_matar.mp4",
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/aa070c94fb5addd90d2c28aa1a987a99424ccde67f7d0155607db6d81ab0efa1.jpg",
+        "video" : "https://www.youtube.com/embed/gYWvwkXreaI?si=UZd1jHFMAunJS39k",
         "pais": "Estados Unidos",
         "año" : "1998",
         "genero" : "Acción, Thriller",
@@ -97,8 +97,8 @@
     {
         "id": "John Wick",
         "titulo": "John Wick",
-        "imagen": "imagenes/miniaturas/mini-john-wick.svg",
-        "video" : "imagenes/descripciones/videos/video_john_wick.mp4",
+        "imagen": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas/john-wick-pacto-de-sangre/120113874-1-esl-ES/John-Wick-Pacto-de-sangre.png",
+        "video" : "https://www.youtube.com/embed/C0BMx-qxsP4?si=eI7zxXJPIuIO1D2-&amp;start=20",
         "pais": "Estados Unidos",
         "año" : "1998",
         "genero" : "Acción, Thriller",
@@ -116,8 +116,8 @@
     {
         "id": "Gru mi villano favorito",
         "titulo": "Gru mi villano favorito",
-        "imagen": "imagenes/miniaturas/mini-gru-mi-villano.svg",
-        "video" : "imagenes/descripciones/videos/video_gru_mi_villano_favorito.mp4",
+        "imagen": "https://es.web.img3.acsta.net/pictures/14/04/30/09/42/037008.jpg",
+        "video" : "https://www.youtube.com/embed/jT3Mp7LlShU?si=nNNk1xeyLnY6HpBL&amp;start=2",
         "pais": "Estados Unidos",
         "año" : "2010",
         "genero" : "Animación, Comedia, Familia",
@@ -135,7 +135,7 @@
     {
         "id": "Jefe en pañales",
         "titulo": "Jefe en pañales",
-        "imagen": "imagenes/miniaturas/mini-jefe-en-pañales.svg",
+        "imagen": "https://play-lh.googleusercontent.com/RuXkuvBTarodgKhXpdJERuhMDYCiXe10U6zly0D3muTe4NzNmSGlhhmcOf3AsC9dmtk",
         "video" : "https://www.youtube.com/embed/SXpVk9uKL8I?si=5jtsshBYqiyJmZHC&amp;start=65",
         "pais": "Estados Unidos",
         "año" : "2017",
@@ -154,8 +154,8 @@
     {
         "id": "Spider-Man: Across the Spider-Verse",
         "titulo": "Spider-Man: Across the Spider-Verse",
-        "imagen": "imagenes/miniaturas/mini-spiderman-across.svg",
-        "video" : "imagenes/descripciones/videos/video_spiderman_across.mp4",
+        "imagen": "https://img.asmedia.epimg.net/resizer/v2/N7WYMQTGPFCX5EWVBVWXJEHO24.jpg?auth=cf962fb8fc0fd348eb60129a188f8f0da511537a3633c78d6815ae0c577589b5&width=360",
+        "video" : "https://www.youtube.com/embed/cqGjhVJWtEg?si=dzuOLLaAdxweULhK&amp;start=13",
         "pais": "Estados Unidos",
         "año" : "2023",
         "genero" : "Animación, Acción, Aventura",
@@ -183,8 +183,141 @@
         "reparto": "Adam Sandler, Kevin James, Chris Rock, David Spade",
         "duracion": "102 minutos",
         "categoria": {
-            "nombre": "Animacion",
-            "id": "animacion"
+            "nombre": "Comedia",
+            "id": "comedia"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "Qué pasó ayer",
+        "titulo": "Qué pasó ayer",
+        "imagen": "https://mx.web.img3.acsta.net/pictures/18/11/23/01/27/2619276.jpg",
+        "video": "https://www.youtube.com/embed/wnNgGp1KVWQ?si=oiTnGuECvI3MAebe&amp;start=13",
+        "pais": "Estados Unidos",
+        "año": "2009",
+        "genero": "Comedia",
+        "director": "Todd Phillips",
+        "sinopsis": "En esta comedia, un grupo de amigos se despierta después de una noche de fiesta en Las Vegas sin recordar nada de lo sucedido. Mientras tratan de reconstruir los eventos de la noche anterior, descubren que el novio de uno de ellos ha desaparecido y deben resolver el misterio antes de la boda. La película es conocida por su humor irreverente y sus situaciones absurdas.",
+        "reparto": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha",
+        "duracion": "100 minutos",
+        "categoria": {
+            "nombre": "Comedia",
+            "id": "comedia"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "Guerra de novias",
+        "titulo": "Guerra de novias",
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/77dc66d309df60c8df84709573565708a1278b06dd22a587a48129fcea7f524b.jpg",
+        "video": "https://www.youtube.com/embed/-fkTqxsGlcQ?si=N44rt27NSgnU0gWo&amp;start=13",
+        "pais": "Estados Unidos",
+        "año": "2009",
+        "genero": "Comedia, Romance",
+        "director": "Gary Winick",
+        "sinopsis": "En esta comedia romántica, dos mejores amigas, Emma y Liv, tienen sus bodas programadas para el mismo día. La tensión entre ellas crece a medida que la rivalidad por los detalles de la boda se convierte en una batalla épica. La película explora la amistad y los desafíos de mantenerla cuando los sueños de una persona entran en conflicto con los de otra.",
+        "reparto": "Anne Hathaway, Kate Hudson, Chris Pratt, Bryan Greenberg",
+        "duracion": "89 minutos",
+        "categoria": {
+            "nombre": "Comedia",
+            "id": "comedia"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "El conjuro",
+        "titulo": "El conjuro",
+        "imagen": "https://play-lh.googleusercontent.com/uw8T4dUGOiGJwEBUl2DelwdhjilcYlrL5sPmr9sAqSkPdX74s6zaMYSdUWJrSdr7AOmFlTOWc_jxT8nyMY4B",
+        "video": "https://www.youtube.com/embed/oUyHULb7xDI?si=uMwu_pq8ogaJLHJ7&amp;start=13",
+        "pais": "Estados Unidos",
+        "año": "2013",
+        "genero": "Terror",
+        "director": "James Wan",
+        "sinopsis": "Basada en hechos reales, sigue a los investigadores paranormales Ed y Lorraine Warren mientras ayudan a una familia aterrorizada por una entidad oscura en su casa de Rhode Island.",
+        "reparto": "Vera Farmiga, Patrick Wilson, Lili Taylor",
+        "duracion": "112 minutos",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "El exorcista",
+        "titulo": "El exorcista",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAXV-zQF3KRp0nR7goo_UgdcgZiGxbMzrgJQ&s",
+        "video": "https://www.youtube.com/embed/BU2eYAO31Cc?si=cje7X_cib8jLNBss",
+        "pais": "Estados Unidos",
+        "año": "1973",
+        "genero": "Terror",
+        "director": "William Friedkin",
+        "sinopsis": "Una madre desesperada busca la ayuda de dos sacerdotes para realizar un exorcismo a su hija poseída por una entidad demoníaca.",
+        "reparto": "Ellen Burstyn, Max von Sydow, Linda Blair",
+        "duracion": "122 minutos",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "It",
+        "titulo": "It",
+        "imagen": "https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/87/80/19/19961693.jpg",
+        "video": "https://www.youtube.com/embed/xKJmEC5ieOk?si=C6Qx_opaPx0HvahW",
+        "pais": "Estados Unidos",
+        "año": "2017",
+        "genero": "Terror",
+        "director": "Andy Muschietti",
+        "sinopsis": "Un grupo de niños en un pequeño pueblo se enfrenta a un antiguo mal que toma la forma de un payaso aterrador llamado Pennywise.",
+        "reparto": "Bill Skarsgård, Jaeden Martell, Sophia Lillis",
+        "duracion": "135 minutos",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "Hereditary",
+        "titulo": "Hereditary",
+        "imagen": "https://es.web.img2.acsta.net/pictures/18/06/06/10/24/2467257.jpg",
+        "video": "https://www.youtube.com/embed/V6wWKNij_1M?si=vlRxwBljg0aadV_r",
+        "pais": "Estados Unidos",
+        "año": "2018",
+        "genero": "Terror",
+        "director": "Ari Aster",
+        "sinopsis": "Después de la muerte de la matriarca de la familia, los miembros restantes descubren oscuros secretos familiares que desatan fuerzas aterradoras.",
+        "reparto": "Toni Collette, Alex Wolff, Milly Shapiro",
+        "duracion": "127 minutos",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 90000,
+        "cantidad": 0
+    },
+    {
+        "id": "Babadook",
+        "titulo": "Babadook",
+        "imagen": "https://pics.filmaffinity.com/Babadook-131562437-large.jpg",
+        "video": "https://www.youtube.com/embed/k5WQZzDRVtw?si=5Lazi9u597mglAis",
+        "pais": "Australia",
+        "año": "2014",
+        "genero": "Terror",
+        "director": "Jennifer Kent",
+        "sinopsis": "Una madre soltera y su hijo enfrentan una presencia aterradora que parece haber salido de un libro de cuentos oscuro.",
+        "reparto": "Essie Davis, Noah Wiseman, Daniel Henshall",
+        "duracion": "93 minutos",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
         },
         "precio": 90000,
         "cantidad": 0

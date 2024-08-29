@@ -40,7 +40,7 @@ async function cargarProductosCarrito() {
                     const div = document.createElement("div");
                     div.classList.add("carrito-producto");
                     div.innerHTML = `
-                        <img class="carrito-producto-imagen" src="../${el.imagen}" alt="${el.titulo}">
+                        <img class="carrito-producto-imagen" src="${el.imagen}" alt="${el.titulo}">
                         <div class="carrito-producto-titulo">
                             <small>Título</small>
                             <h3>${el.titulo}</h3>
