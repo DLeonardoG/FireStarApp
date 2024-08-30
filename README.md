@@ -1,4 +1,4 @@
-# FireStarApp 🌏🔥
+# FireStarApp🔥
 
 ## Tabla de contenido
 | Indice | Título  |
@@ -13,11 +13,11 @@
 
 ## Descripcion🚀
 
-El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es la maquetacion para una empresa de ventas de Blue Ray, diseñada para visualizar y comprar las peliculas mas actualizadas y de mejor calidad a mejor precio.
+El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, a base de una venta de Blue Ray, diseñada para visualizar y comprar las peliculas mas actualizadas y de mejor calidad a mejor precio.
 
 ## Características🧮
 
-1. **Peliculas** 🎬: Permite registrar visualizar el catalogo de las peliculas añadidas.
+1. **Inicio** 🎬: Permite ingresar a la pagina de manera adecuada.
 
 2. **Descripcion** 📄: Permite visualizar la descripcion de cada pelicula.
 
@@ -32,6 +32,7 @@ El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, es
 
 - **Html** : Se uso para el contenido de la pagina.
 - **Css** : Se uso para el diseño de la pagina.
+- **JavaScript** : Se uso para todo el dinamismo de la pagina.
 
 ## Uso📝
 
