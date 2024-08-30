@@ -1,5 +1,4 @@
 let productosEnCarrito = JSON.parse(localStorage.getItem("carrito"));
-console.log(productosEnCarrito);
 
 const cargarPeliculas = async () => {
     try {
@@ -15,6 +14,68 @@ const cargarPeliculas = async () => {
         console.error(error);
     }
 };
+
+const hacerHeader = () => {
+    const header = document.querySelector("header");
+    header.innerHTML = ``;
+    header.innerHTML = `
+    <nav>
+            <ul class="header__nav">
+                <li>
+                    <form class="nav__form" action="../index.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes/iconos/icono-inicio.png" alt="inicio">
+                            <span class="nav__span nav__span--inicio">Inicio</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="peliculas_categorias.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--inicio" src="../imagenes/iconos/icono-peliculas.svg" alt="Peliculas">
+                            <span class="nav__span nav__span--inicio">Peliculas</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="#">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras" src="../imagenes/iconos/icono-compras-azul.svg" alt="Compras">
+                            <span class="nav__span nav__span--azul">Compras</span>
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form class="nav__form" action="perfil.html">
+                        <button class="nav__button" type="submit">
+                            <img class="nav__img img--compras icono__perfil" src="../imagenes/miniaturas/juankis.jpeg" alt="Perfil">
+                            <span class="nav__span nav__span--compras">Perfil</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>`
+}
+const hacerfooter = () => {
+    const footer = document.querySelector("footer");
+    footer.innerHTML = ``;
+    footer.innerHTML = `
+          <nav>
+            <ul class="footer__nav lista">
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-compras.png" alt="icono Peliculas"></a>
+                </li>
+                <li>
+                    <div class="footer__nav__title">
+                        <h2 id="nav--compras" class="footer__nav__title nav__span--compras">Compras</h2>
+                    </div>
+                </li>
+                <li>
+                    <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
+                </li>
+            </ul>
+        </nav>`;}
+
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
@@ -75,9 +136,6 @@ async function cargarProductosCarrito() {
     }
 
 }
-
-cargarProductosCarrito();
-
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
@@ -85,64 +143,28 @@ function actualizarBotonesEliminar() {
         boton.addEventListener("click", eliminarDelCarrito);
     });
 }
-
 function eliminarDelCarrito(e) {
-    Toastify({
-        text: "Producto eliminado",
-        duration: 3000,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
-          borderRadius: "2rem",
-          textTransform: "uppercase",
-          fontSize: ".75rem"
-        },
-        offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-          },
-        onClick: function(){} // Callback after click
-      }).showToast();
-
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-    
     productosEnCarrito.splice(index, 1);
     cargarProductosCarrito();
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
 }
-
 botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
-
-    Swal.fire({
-        title: '¿Estás seguro?',
-        icon: 'question',
-        html: `Se van a borrar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
-        showCancelButton: true,
-        focusConfirm: false,
-        confirmButtonText: 'Sí',
-        cancelButtonText: 'No'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            productosEnCarrito.length = 0;
-            localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
-            cargarProductosCarrito();
-        }
-      })
+    productosEnCarrito.length = 0;
+    localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
+    cargarProductosCarrito();
 }
-
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
-
     productosEnCarrito.length = 0;
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
-
 }
+hacerHeader();
+cargarProductosCarrito();
+hacerfooter();

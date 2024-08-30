@@ -40,7 +40,7 @@ const mostrarPeliculaDescripcion = async () => {
             <h2 class="descripcion__title descripcion__title--reparto">Reparto</h2>
             <span class="descripcion__caracteristicas"> ${peliculas[i].reparto}</span>
             <br>
-            <ul class="lista descripcion__caracteristicas">
+            <ul id="descripcionCarac" class="lista">
                 <li><span><b>Pais:</b> ${peliculas[i].pais}</span></li>
                 <li><span><b>Año:</b>${peliculas[i].año}</span></li>
                 <li><span><b>Género:</b> ${peliculas[i].genero}</span></li>
@@ -62,7 +62,7 @@ const mostrarPeliculaDescripcion = async () => {
             <a href="carrito.html" id="pagarBoton" class="pago__button comprar">Comprar</a>
         </div>
         <div class="pago__botones">
-            <a href="ver_todos/peliculas_ver_todas.html" class="pago__button pago__button--transparente">No comprar</a>
+            <a href="./peliculas_categorias.html" class="pago__button pago__button--transparente">No comprar</a>
         </div>
         `;
     peliId = document.getElementById("pagarBoton");
@@ -112,7 +112,7 @@ const mostrarPeliculaDescripcion = async () => {
         <nav>
         <ul class="footer__nav lista footer__descripcion">
             <li>
-                <a class="footer__nav__button" href="peliculas_categorias.html"><img class="footer__nav__img footer__nav__img--imagen" src="../../../imagenes/iconos/icono-volver.svg" alt="icono Peliculas"></a>
+                <a class="footer__nav__button" href="peliculas_categorias.html"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-volver.svg" alt="icono Peliculas"></a>
             </li>
             <li>
                 <div class="footer__nav__title">
@@ -120,7 +120,7 @@ const mostrarPeliculaDescripcion = async () => {
                 </div>
             </li>
             <li>
-                <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../../../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
+                <a class="footer__nav__button" href="#"><img class="footer__nav__img footer__nav__img--imagen" src="../imagenes/iconos/icono-perfil-header.png" alt="icono perfil"></a>
             </li>
         </ul>
     </nav>

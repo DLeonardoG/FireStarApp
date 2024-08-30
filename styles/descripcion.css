@@ -53,7 +53,7 @@ li span {
 @media (min-width: 550px) and (max-width: 999px){
     
 }
-@media (min-width: 1000px){ 
+@media (min-width: 700px){ 
     .footer__descripcion {
         width: 100%;
     }
@@ -83,12 +83,12 @@ li span {
         box-sizing: border-box;
     }
     .descripcion__title {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         margin: 5% 0 0;
         padding: 0 ;
     }
     .descripcion__title--sinopsis {
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin: 5vh 0 0;
         padding: 0;
     }
@@ -97,19 +97,26 @@ li span {
         margin: 5% 0 0;
     }
     .descripcion__caracteristicas {
-        font-size: 0.3rem;
+        font-size: 0.5rem;
     }
     .descripcion__texto {
-        font-size: 0.3rem;
+        font-size: 0.5rem;
         margin: 0;
         padding: 0;
     }
-    .main__descripcion {
-    }
-    .descripcion__caracteristicas li span {
-        font-size: 0.3rem;
+    .descripcion__caracteristicas {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+    }
+    #descripcionCarac span{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 2%;
+        font-size: 0.5em;
     }
     .pago {
         padding: 0;

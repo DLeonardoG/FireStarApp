@@ -20,7 +20,7 @@ const hacerHeader = () => {
             <li>
                 <form class="nav__form" action="#">
                     <button class="nav__button" type="submit">
-                        <img class="nav__img img--inicio" src="imagenes/iconos/icono-inicio-azul.svg" alt="inicio">
+                        <img class="nav__img img--inicio" src="./imagenes/iconos/icono-inicio-azul.svg" alt="inicio">
                         <span class="nav__span nav__span--azul">Inicio</span>
                     </button>
                 </form>
@@ -36,7 +36,7 @@ const hacerHeader = () => {
             <li>
                 <form class="nav__form" action="html/carrito.html">
                     <button class="nav__button" type="submit">
-                        <img class="nav__img img--compras" src="imagenes/iconos/icono-compras.png" alt="Compras">
+                        <img class="nav__img img--compras" src="./imagenes/iconos/icono-compras.png" alt="Compras">
                         <span class="nav__span nav__span--compras">Compras</span>
                     </button>
                 </form>
@@ -75,7 +75,7 @@ const mostrarPeliculaDescripcion = async () => {
     const descripcion = document.getElementById("miniatures__home");
     const peliculas = await cargarPeliculas();
     let descripcionContenido = ``;
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 8; i++) {
         descripcionContenido += `
         <figure>
             <a id="${peliculas[i].id}" class="miniaturas__peliculas abrir" href="html/descripcion.html">

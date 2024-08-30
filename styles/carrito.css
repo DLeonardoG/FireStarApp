@@ -1,3 +1,7 @@
+:root {
+    --var-clr-gris: #7d7171;
+}
+
 body {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -5,7 +9,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
     font-size: 5vw;
     margin: 0;
     margin: 15% 0 15%;
@@ -77,9 +80,9 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #f7fafc;
     border-top: 1px solid #e2e8f0;
     border-bottom: 1px solid #e2e8f0;
+    background-color: var(--var-clr-gris);
 }
 
 .total {
@@ -123,7 +126,7 @@ body {
 @media (min-width: 550px) and (max-width: 999px){
     
 }
-@media (min-width: 1000px){
+@media (min-width: 700px){
     body {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -216,7 +219,7 @@ body {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        background-color: #f7fafc;
+        background-color: #;
         border-top: 1px solid #e2e8f0;
         border-bottom: 1px solid #e2e8f0;
         display: flex;
@@ -224,6 +227,7 @@ body {
         width: 100%;
         margin: auto;
         justify-content: center;
+
     }
     .pago__button {
         font-size: 30px;

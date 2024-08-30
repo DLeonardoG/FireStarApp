@@ -82,16 +82,42 @@
     margin-bottom: 2vh;
 }
 
-@media (min-width: 550px) and (max-width: 999px){
-
+.top_del_mes__h2 {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
-@media (min-width: 1000px){
+.top_del_mes__h2 {
+    font-size: 15vw;
+}
+
+@media (min-width: 100px) and (max-width:385px){
+    .bienvenida {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        padding: 1em;
+        margin: 0;
+    }
+    .top_del_mes__h2 {
+        font-size: 24vw;
+    }
+}
+@media (min-width: 700px){
     .bienvenida {
         text-align: center;
         color: white;
         font-size: 0.5em;
         padding: 1em;
         margin: 0;
+    }
+    .loMasTop img {
+        max-width:50vw;
     }
     .header__nav {
         /* background-image: linear-gradient( #2E3034, #1E1D1D, #000000, #000000); */
