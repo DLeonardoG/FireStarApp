@@ -1,60 +1,59 @@
 # FireStarApp🔥
 
-## Tabla de contenido
-| Indice | Título  |
+## Table of Contents
+| Index | Title  |
 |--|--|
-| 1. | [Descripción](#Descripcion) |
-| 2. | [Características](#Características) |
-| 3. | [Tecnologías Utilizadas](#Tecnologias) |
-| 4. | [Uso del Repositorio](#Uso) |
-| 5. | [Instrucciones de Ejecución](#Instrucciones) |
-| 6. | [Imagenes de la pagina](#Imagenes) |
-| 7. | [Contacto](#Contacto) |
+| 1. | [Description](#Description) |
+| 2. | [Features](#Features) |
+| 3. | [Technologies Used](#Technologies) |
+| 4. | [Repository Usage](#Usage) |
+| 5. | [Execution Instructions](#Instructions) |
+| 6. | [Page Images](#Images) |
+| 7. | [Contact](#Contact) |
 
-## Descripcion🚀
+## Description🚀
 
-El proyecto FireStarApp es una plataforma e-commerce en estado de desarrollo, a base de una venta de Blue Ray, diseñada para visualizar y comprar las peliculas mas actualizadas y de mejor calidad a mejor precio.
+The FireStarApp project is an e-commerce platform under development, focused on selling Blu-ray movies. It is designed to allow users to view and purchase the latest and best-quality movies at the best prices.
 
-## Características🧮
+## Features🧮
 
-1. **Inicio** 🎬: Permite ingresar a la pagina de manera adecuada.
+1. **Home** 🎬: Allows proper access to the page.
 
-2. **Descripcion** 📄: Permite visualizar la descripcion de cada pelicula.
+2. **Description** 📄: Allows users to view the description of each movie.
 
-3. **Categorias** 📄: Permite ver las peliculas divididas por categorias.
+3. **Categories** 📄: Displays movies divided by categories.
 
-4. **Compras** 🛍️: Carrito de compras permite ver las compras y lo añadido para comprar despues.
+4. **Shopping** 🛍️: A shopping cart to view items added for later purchase.
 
-
-## Tecnologias🖥️ 
+## Technologies🖥️ 
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-- **Html** : Se uso para el contenido de la pagina.
-- **Css** : Se uso para el diseño de la pagina.
-- **JavaScript** : Se uso para todo el dinamismo de la pagina.
+- **HTML**: Used for the content structure of the page.  
+- **CSS**: Used for the design and styling of the page.  
+- **JavaScript**: Used for all the page's interactivity and dynamic behavior.
 
-## Uso📝
+## Usage📝
 
-Este repositorio contiene el código fuente del proyecto FireStarApp, conteniendo toda la maquetacion de la pagina. Cada directorio y archivo está estructurado para facilitar despliegue de la aplicación.
+This repository contains the source code for the FireStarApp project, including the complete page layout. Each directory and file is structured to facilitate the deployment of the application.
 
-## Instrucciones📐
+## Instructions📐
 
-1. Clona el repositorio a tu máquina local. 
-2. Configura adecuadamente todo lo adecuado para abrir el index de html.
-3. Abre la app con tu navegador adecuado.
+1. Clone the repository to your local machine.  
+2. Properly configure everything needed to open the HTML index.  
+3. Open the app using an appropriate browser.
 
-## Imagenes
+## Images
 
 <img src="imagenes/readme/inicio.jpeg" alt="Descripción de la imagen" height="500px"> <img src="imagenes/readme/categorias.jpeg" alt="Descripción de la imagen" height="500px"> <img src="imagenes/readme/categoria_especifica.jpeg" alt="Descripción de la imagen" height="500px">
 
 <img src="imagenes/readme/descripcion_1.jpeg" alt="Descripción de la imagen" height="500px"> <img src="imagenes/readme/descripcion_2.jpeg" alt="Descripción de la imagen" height="500px"> <img src="imagenes/readme/carrito_de_compras.jpeg" alt="Descripción de la imagen" height="500px">
 
 
-## Autor👤
+## Author👤
 
 [Leonardo Gonzalez](https://github.com/DLeonardoG) 
 
-## Contacto
+## Contact
 
 Linkedin: <a href="https://www.linkedin.com/in/leonardo-gonzalez-302321311/" target="_blank">Leonardo Gonzalez</a>
